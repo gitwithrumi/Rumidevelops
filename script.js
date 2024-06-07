@@ -86,3 +86,5 @@ function toggleAnswer(id) {
     item.classList.remove("open");
   }
 }
+
+const navbarToggle = document.querySelector("#navbar-part--2");
