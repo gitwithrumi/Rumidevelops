@@ -668,7 +668,7 @@ textarea {
 
 /*** PROCESS PAGE START ***/
 #process-page {
-  margin-top: 35px;
+  padding-top: 120px;
 }
 /*** PROCESS PAGE END ***/
 
@@ -1077,53 +1077,6 @@ textarea {
 
   /*** FAQ SECTION END ***/
 
-  /*** PROCESS SECTION START ***/
-  #process {
-    margin-top: -250px;
-  }
-
-  .process-div {
-    align-items: center;
-  }
-
-  .process-div--item {
-    padding: 10px;
-    align-items: center;
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
-
-  .process-item--1 span {
-    font-size: 18px;
-    background-color: #dadada;
-    color: #000;
-    border-radius: 50%;
-    padding: 10px 20px;
-  }
-  .process-item--1 h1 {
-    font-size: 18px;
-    font-weight: 500;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    color: var(--primary-green);
-  }
-  .process-item--1 p {
-    font-size: 14px;
-    font-weight: 100;
-    color: var(--secondary-grey);
-    text-align: left;
-    margin-bottom: 20px;
-  }
-
-  .process-item--2 img {
-    width: 200px;
-    height: 180px;
-    object-fit: cover;
-  }
-
-  /*** PROCESS SECTION END ***/
-
   /*** NAVBAR START ***/
 
   #nav {
@@ -1293,6 +1246,12 @@ textarea {
   }
 
   /*** ABOUT PAGE END ***/
+
+  /*** PROCESS PAGE START ***/
+  #process-page {
+    padding-top: 100px;
+  }
+  /*** PROCESS PAGE END ***/
 
   /*** PROCESS SECTION START ***/
   #process {
@@ -1890,12 +1849,6 @@ textarea {
   }
 
   /*** ABOUT PAGE END ***/
-
-  /*** PROCESS PAGE START ***/
-  #process-page {
-    margin-top: -250px;
-  }
-  /*** PROCESS PAGE END ***/
 
   /*** CONTACT START ***/
 
@@ -2519,12 +2472,6 @@ textarea {
   }
 
   /*** ABOUT PAGE END ***/
-
-  /*** PROCESS PAGE START ***/
-  #process-page {
-    margin-top: -250px;
-  }
-  /*** PROCESS PAGE END ***/
 }
 
 @media screen and (min-width: 701px) and (max-width: 900px) {
