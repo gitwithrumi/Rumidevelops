@@ -779,8 +779,8 @@ textarea {
     width: 100%;
   }
   #home-part--2 img {
-    height: 350px;
-    width: 320px;
+    height: 150px;
+    width: 150px;
     object-fit: cover;
   }
   /*** HOME END ***/
@@ -897,8 +897,8 @@ textarea {
   }
 
   #about-us--1 img {
-    height: 300px;
-    width: 200px;
+    height: 200px;
+    width: 150px;
     border-radius: 10px;
     box-shadow: 7px 7px 10px -3px rgba(0, 0, 0, 0.4);
   }
@@ -1353,13 +1353,16 @@ textarea {
     width: 100%;
     height: 100%;
     padding-right: 0px;
+    padding-left: 20px;
     background-color: #fff;
     padding-bottom: 50px;
   }
 
   #contact-part--1 img {
-    width: 300px;
-    height: 300px;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-left: 25vw;
   }
 
   #contact-part--2 {
@@ -1374,7 +1377,7 @@ textarea {
     padding: 6px 10px;
     background-color: var(--primary-green);
     font-weight: 600;
-    font-size: 16px;
+    font-size: 12px;
     font-family: poppins;
     color: #fff;
   }
@@ -1386,12 +1389,13 @@ textarea {
     display: block;
     font-weight: 500;
     font-family: poppins;
+    font-size: 14px;
   }
   input,
   textarea {
     width: 80%;
     padding: 6px 12px;
-    font-size: 18px;
+    font-size: 12px;
   }
   .btn-submit {
     border: none;
@@ -1922,7 +1926,7 @@ textarea {
     padding: 6px 10px;
     background-color: var(--primary-green);
     font-weight: 600;
-    font-size: 16px;
+    font-size: 14px;
     font-family: poppins;
     color: #fff;
   }
@@ -1934,12 +1938,13 @@ textarea {
     display: block;
     font-weight: 500;
     font-family: poppins;
+    font-size: 14px;
   }
   input,
   textarea {
     width: 80%;
     padding: 6px 12px;
-    font-size: 18px;
+    font-size: 14px;
   }
   .btn-submit {
     border: none;
@@ -2520,68 +2525,6 @@ textarea {
     margin-top: 0px;
   }
   /*** PROCESS PAGE END ***/
-
-  /*** CONTACT START ***/
-
-  #contact-heading {
-    padding: 20px;
-    padding-top: 120px;
-    width: 100%;
-  }
-
-  #contact {
-    width: 100%;
-    height: 100%;
-    padding-right: 0px;
-    background-color: #fff;
-    padding-bottom: 50px;
-  }
-
-  #contact-part--1 img {
-    width: 300px;
-    height: 300px;
-  }
-
-  #contact-part--2 {
-    padding: 30px;
-  }
-
-  #selection-service {
-    padding: 6px 10px;
-    background-color: var(--primary-green);
-    font-weight: 600;
-    font-size: 16px;
-    font-family: poppins;
-    color: #fff;
-  }
-
-  .mb-3 {
-    margin-bottom: 12px;
-  }
-  label {
-    display: block;
-    font-weight: 500;
-    font-family: poppins;
-  }
-  input,
-  textarea {
-    width: 80%;
-    padding: 6px 12px;
-    font-size: 18px;
-  }
-  .btn-submit {
-    border: none;
-    border-radius: 10px;
-    padding: 10px 22px;
-    background-color: var(--primary-green);
-    font-size: 16px;
-    color: #fff;
-    font-weight: 500;
-    font-family: poppins;
-    cursor: pointer;
-  }
-
-  /*** CONTACT END ***/
 }
 
 @media screen and (min-width: 701px) and (max-width: 900px) {
