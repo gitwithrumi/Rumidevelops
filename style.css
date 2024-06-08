@@ -1893,7 +1893,7 @@ textarea {
 
   /*** PROCESS PAGE START ***/
   #process-page {
-    margin-top: 0px;
+    margin-top: -250px;
   }
   /*** PROCESS PAGE END ***/
 
@@ -2522,7 +2522,7 @@ textarea {
 
   /*** PROCESS PAGE START ***/
   #process-page {
-    margin-top: 0px;
+    margin-top: -250px;
   }
   /*** PROCESS PAGE END ***/
 }
