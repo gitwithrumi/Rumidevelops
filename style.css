@@ -737,7 +737,7 @@ textarea {
   }
   #home-part--1 {
     height: 100%;
-    width: 80%;
+    width: 100%;
   }
   #home-part--1 h1 {
     margin-bottom: 15px;
@@ -769,8 +769,8 @@ textarea {
     font-size: 16px;
   }
   #home-part--1 #contact a button {
-    padding: 12px 24px;
-    font-size: 18px;
+    padding: 12px 20px;
+    font-size: 14px;
     cursor: pointer;
     display: inline-block;
   }
