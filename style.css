@@ -61,14 +61,16 @@ h6 {
 
 #contactBtn a button {
   border: none;
-  border-radius: 20px;
-  padding: 10px 22px;
+  border-radius: 8px;
+  padding: 8px 20px;
   background-color: var(--primary-blue);
   border: 1px solid var(--primary-blue);
-  font-size: 16px;
+  font-size: 30px;
   color: #fff;
   font-weight: 500;
-  font-family: poppins;
+  font-family: bigheader;
+  font-stretch: ultra-expanded;
+  text-transform: uppercase;
   cursor: pointer;
   transition: all 0.2s ease;
 }
@@ -283,24 +285,30 @@ h6 {
   margin-bottom: 30px;
   font-size: 20px;
   font-weight: 100;
-  word-spacing: 2px;
-  line-height: 38px;
+  word-spacing: 1px;
+  line-height: 32px;
 }
 #home-part--1 h3 span {
   color: var(--primary-green);
   font-size: 22px;
   font-weight: 300;
 }
+#home-part--1 h3 span.internal-problem {
+  color: rgb(219, 5, 5);
+  font-weight: 600;
+}
 #home-part--1 h3 a {
   color: rgb(249, 48, 48);
   font-weight: 600;
   font-size: 24px;
 }
-#home-part--1 #contact a button {
+#home-part--1 #contactBtn a button {
   padding: 12px 24px;
-  font-size: 18px;
+  font-size: 48px;
   cursor: pointer;
   display: inline-block;
+  letter-spacing: 0.5px;
+  font-weight: 900;
 }
 #home-part--2 {
   height: 100%;
@@ -768,7 +776,7 @@ textarea {
     font-weight: 600;
     font-size: 16px;
   }
-  #home-part--1 #contact a button {
+  #home-part--1 #contactBtn a button {
     padding: 12px 20px;
     font-size: 14px;
     cursor: pointer;
