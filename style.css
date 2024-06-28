@@ -6,6 +6,10 @@
   font-family: bigheader;
   src: url("fonts/HeadingNowTrial-38Heavy.ttf");
 }
+@font-face {
+  font-family: cta;
+  src: url("fonts/BebasNeue-Regular.ttf");
+}
 /*** BASE RULES START ***/
 * {
   margin: 0;
@@ -62,13 +66,13 @@ h6 {
 #contactBtn a button {
   border: none;
   border-radius: 8px;
-  padding: 8px 20px;
+  padding: 6px 20px;
   background-color: var(--primary-blue);
   border: 1px solid var(--primary-blue);
   font-size: 30px;
   color: #fff;
-  font-weight: 500;
-  font-family: bigheader;
+  font-weight: 600;
+  font-family: cta;
   font-stretch: ultra-expanded;
   text-transform: uppercase;
   cursor: pointer;
@@ -125,6 +129,9 @@ h6 {
 #nav-part--2 {
   position: absolute;
   left: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 #nav-part--2 ul {
   display: flex;
@@ -144,6 +151,10 @@ h6 {
   text-decoration: none;
   color: var(--secondary-black);
   font-family: poppins;
+}
+#cta {
+  position: absolute;
+  right: -220%;
 }
 
 #contactBtn a button:hover {
@@ -303,7 +314,7 @@ h6 {
   font-size: 24px;
 }
 #home-part--1 #contactBtn a button {
-  padding: 12px 24px;
+  padding: 10px 28px;
   font-size: 48px;
   cursor: pointer;
   display: inline-block;
@@ -320,6 +331,53 @@ h6 {
   object-fit: cover;
 }
 /*** HOME END ***/
+
+/*** STAKES SECTION START ***/
+
+#problems {
+  width: 100%;
+  height: 100%;
+  background-color: #dadada;
+}
+#problems h1 {
+  font-size: 54px;
+  font-weight: 900;
+  font-family: bigheader;
+  text-transform: uppercase;
+}
+#problems h1 span {
+  font-size: 20px;
+  font-family: poppins;
+  color: rgb(219, 5, 5);
+  text-transform: capitalize;
+}
+#problems-div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+}
+#problems-part--2 img {
+  height: 400px;
+  width: 350px;
+  border-radius: 10px;
+}
+#problems #contactBtn a button {
+  font-size: 48px;
+  margin-top: 30px;
+}
+#problems span {
+  color: var(--primary-blue);
+  font-size: 20px;
+  font-weight: 900;
+}
+#problems span.danger {
+  color: rgb(219, 5, 5);
+  text-transform: uppercase;
+}
+
+/*** STAKES SECTION END ***/
 
 /*** CONTACT START ***/
 
@@ -705,14 +763,14 @@ textarea {
 
   #contactBtn a button {
     border: none;
-    border-radius: 20px;
+    border-radius: 6px;
     padding: 6px 14px;
     background-color: var(--primary-blue);
     border: 1px solid var(--primary-blue);
-    font-size: 16px;
+    font-size: 26px;
     color: #fff;
-    font-weight: 500;
-    font-family: poppins;
+    font-weight: 600;
+    font-family: cta;
     cursor: pointer;
     transition: all 0.2s ease;
   }
@@ -778,7 +836,7 @@ textarea {
   }
   #home-part--1 #contactBtn a button {
     padding: 12px 20px;
-    font-size: 14px;
+    font-size: 26px;
     cursor: pointer;
     display: inline-block;
   }
@@ -792,6 +850,54 @@ textarea {
     object-fit: cover;
   }
   /*** HOME END ***/
+
+  /*** STAKES SECTION START ***/
+
+  #problems {
+    width: 100%;
+    height: 100%;
+    background-color: #dadada;
+    padding-top: 40px;
+  }
+  #problems h1 {
+    font-size: 28px;
+    font-weight: 900;
+    font-family: cta;
+    text-transform: uppercase;
+  }
+  #problems h1 span {
+    font-size: 14px;
+    font-family: poppins;
+    color: rgb(219, 5, 5);
+    text-transform: capitalize;
+  }
+  #problems-div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+  }
+  #problems-part--2 img {
+    height: 150px;
+    width: 120px;
+  }
+  #problems #contactBtn a button {
+    font-size: 30px;
+    margin-top: 30px;
+  }
+  #problems span {
+    color: var(--primary-blue);
+    font-size: 14px;
+    font-weight: 900;
+  }
+  #problems span.danger {
+    color: rgb(219, 5, 5);
+    text-transform: uppercase;
+  }
+
+  /*** STAKES SECTION END ***/
 
   /*** SALES SECTION START ***/
 
@@ -2017,14 +2123,14 @@ textarea {
 
   #contactBtn a button {
     border: none;
-    border-radius: 20px;
+    border-radius: 10px;
     padding: 9px 18px;
     background-color: var(--primary-blue);
     border: 1px solid var(--primary-blue);
-    font-size: 16px;
+    font-size: 30px;
     color: #fff;
-    font-weight: 500;
-    font-family: poppins;
+    font-weight: 600;
+    font-family: cta;
     cursor: pointer;
     transition: all 0.2s ease;
   }
@@ -2088,9 +2194,10 @@ textarea {
     font-weight: 600;
     font-size: 16px;
   }
-  #home-part--1 #contact a button {
+  #home-part--1 #contactBtn a button {
     padding: 12px 24px;
-    font-size: 18px;
+    font-size: 28px;
+    font-family: cta;
     cursor: pointer;
     display: inline-block;
   }
@@ -2104,6 +2211,55 @@ textarea {
     object-fit: cover;
   }
   /*** HOME END ***/
+
+  /*** STAKES SECTION START ***/
+
+  #problems {
+    width: 100%;
+    height: 100%;
+    background-color: #dadada;
+    padding-top: 40px;
+  }
+  #problems h1 {
+    font-size: 32px;
+    font-weight: 900;
+    font-family: cta;
+    text-transform: uppercase;
+  }
+  #problems h1 span {
+    font-size: 14px;
+    font-family: poppins;
+    color: rgb(219, 5, 5);
+    text-transform: capitalize;
+  }
+  #problems-div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+  }
+  #problems-part--2 img {
+    height: 150px;
+    width: 120px;
+  }
+  #problems #contactBtn a button {
+    font-size: 40px;
+    margin-top: 30px;
+    font-family: cta;
+  }
+  #problems span {
+    color: var(--primary-blue);
+    font-size: 14px;
+    font-weight: 900;
+  }
+  #problems span.danger {
+    color: rgb(219, 5, 5);
+    text-transform: uppercase;
+  }
+
+  /*** STAKES SECTION END ***/
 
   /*** SALES SECTION START ***/
 
