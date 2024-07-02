@@ -326,9 +326,12 @@ h6 {
   width: 25%;
 }
 #home-part--2 img {
-  height: 500px;
+  height: 400px;
   width: 400px;
   object-fit: cover;
+  margin-top: 20px;
+  margin-left: 20px;
+  border-radius: 10px;
 }
 /*** HOME END ***/
 
@@ -439,6 +442,10 @@ textarea {
 
 /*** SALES SECTION START ***/
 
+#sales-growth--container {
+  background-color: var(--primary-green);
+}
+
 #sales-growth {
   width: 100%;
   height: 100%;
@@ -463,6 +470,7 @@ textarea {
 #sales-growth--2 {
   color: #000;
   background-color: var(--primary-green);
+  padding-top: 0px;
 }
 
 .sales-growth--heading {
@@ -481,34 +489,91 @@ textarea {
 }
 
 .sales-growth--item {
-  background-color: #fff;
-  border: 3px solid #000;
+  background-color: aqua;
+  border: 1px solid var(--primary-green);
   border-radius: 10px;
   padding: 20px;
-  box-shadow: 14px 19px 0px -3px rgba(0, 0, 0, 0.4);
+  box-shadow: 10px 12px 0px -3px rgba(0, 0, 0, 0.4);
+  color: #000;
 }
 .sales-growth--item h3 {
-  font-size: 20px;
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: 900;
+  margin-bottom: 10px;
 }
 .sales-growth--item p {
-  text-align: justify;
+  text-align: left;
+}
+.sales-growth--item p span {
+  font-weight: 900;
 }
 #sales-growth--btn a button {
-  font-size: 18px;
-  font-weight: 600;
-  background-color: #fff;
-  border: 3px solid #000;
+  font-size: 48px;
+  font-weight: 900;
+  background-color: aqua;
+  border: 1px solid var(--primary-green);
   border-radius: 10px;
-  padding: 12px 24px;
+  padding: 8px 20px;
   margin-top: 45px;
+  text-transform: uppercase;
+  font-family: cta;
+  box-shadow: 7px 7px 0px -3px rgba(0, 0, 0, 0.4);
 }
 #sales-growth--btn a button:hover {
-  box-shadow: 7px 7px 0px -3px rgba(0, 0, 0, 0.4);
-  margin-top: 46px;
+  scale: 1.01;
   cursor: pointer;
+  background-color: aqua;
 }
 
 /*** SALES SECTION END ***/
+
+/*** PLAN SECTION START ***/
+
+#plan-container {
+  padding-bottom: 50px;
+  background-color: #dadada;
+}
+#plan-container > h2 {
+  font-size: 58px;
+  text-transform: uppercase;
+  font-family: cta;
+  margin-bottom: 20px;
+}
+.plan-item {
+  padding: 20px;
+}
+.plan-item h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+.plan-item h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.plan-item i {
+  font-size: 30px;
+  margin-top: 30px;
+  margin-left: 10px;
+}
+#plan-container #contactBtn a button {
+  font-size: 48px;
+  font-weight: 900;
+  background-color: var(--primary-blue);
+  border: none;
+  border-radius: 10px;
+  padding: 8px 20px;
+  margin-top: 45px;
+  text-transform: uppercase;
+  font-family: cta;
+  box-shadow: 7px 7px 0px -3px rgba(0, 0, 0, 0.4);
+}
+#plan-container #contactBtn a button:hover {
+  scale: 1.01;
+  cursor: pointer;
+  background-color: aqua;
+}
+/*** PLAN SECTION END ***/
 
 /*** ABOUT SECTION START ***/
 
@@ -949,8 +1014,7 @@ textarea {
   }
 
   .sales-growth--item {
-    background-color: #fff;
-    border: 3px solid #000;
+    border: 1px solid var(--primary-green);
     border-radius: 10px;
     padding: 15px;
     box-shadow: 12px 12px 0px -3px rgba(0, 0, 0, 0.4);
@@ -964,17 +1028,15 @@ textarea {
     font-size: 12px;
   }
   #sales-growth--btn a button {
-    font-size: 16px;
-    font-weight: 600;
-    background-color: #fff;
-    border: 3px solid #000;
+    font-size: 26px;
+    font-weight: 900;
     border-radius: 10px;
     padding: 6px 14px;
     margin-top: 45px;
+    box-shadow: 5px 5px 0px -3px rgba(0, 0, 0, 0.4);
   }
   #sales-growth--btn a button:hover {
-    box-shadow: 7px 7px 0px -3px rgba(0, 0, 0, 0.4);
-    margin-top: 46px;
+    scale: 1.01;
     cursor: pointer;
   }
 
@@ -1652,17 +1714,15 @@ textarea {
     font-size: 13px;
   }
   #sales-growth--btn a button {
-    font-size: 17px;
-    font-weight: 600;
-    background-color: #fff;
-    border: 3px solid #000;
+    font-size: 30px;
+    font-weight: 900;
     border-radius: 10px;
     padding: 8px 16px;
     margin-top: 45px;
+    box-shadow: 7px 7px 0px -3px rgba(0, 0, 0, 0.4);
   }
   #sales-growth--btn a button:hover {
-    box-shadow: 7px 7px 0px -3px rgba(0, 0, 0, 0.4);
-    margin-top: 46px;
+    scale: 1.01;
     cursor: pointer;
   }
 
@@ -2311,11 +2371,9 @@ textarea {
   }
 
   .sales-growth--item {
-    background-color: #fff;
-    border: 3px solid #000;
     border-radius: 10px;
     padding: 15px;
-    box-shadow: 12px 12px 0px -3px rgba(0, 0, 0, 0.4);
+    box-shadow: 10px 10px 0px -3px rgba(0, 0, 0, 0.4);
   }
   .sales-growth--item h3 {
     font-size: 15px;
@@ -2325,17 +2383,15 @@ textarea {
     font-size: 13px;
   }
   #sales-growth--btn a button {
-    font-size: 17px;
+    font-size: 34px;
     font-weight: 600;
-    background-color: #fff;
-    border: 3px solid #000;
     border-radius: 10px;
     padding: 8px 16px;
     margin-top: 45px;
+    box-shadow: 7px 7px 0px -3px rgba(0, 0, 0, 0.4);
   }
   #sales-growth--btn a button:hover {
-    box-shadow: 7px 7px 0px -3px rgba(0, 0, 0, 0.4);
-    margin-top: 46px;
+    scale: 1.01;
     cursor: pointer;
   }
 
