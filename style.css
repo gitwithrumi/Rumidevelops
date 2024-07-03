@@ -611,188 +611,57 @@ textarea {
   font-size: 44px;
   font-weight: 600;
 }
+#call-to--actions {
+  display: flex;
+  gap: 30px;
+}
 
 /*** ABOUT SECTION END ***/
 
-/*** WHY SECTION START ***/
-
-#why-us > h1 {
-  font-size: 48px;
-  font-weight: 300;
-  text-shadow: 4px 3px 6px rgba(0, 0, 0, 0.2);
-}
-.why-us--right img {
-  height: 200px;
-  width: 200px;
-  object-fit: cover;
-}
-.why-us--item {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-.why-us--left h2 {
-  margin-bottom: 20px;
-  font-size: 32px;
-}
-.why-us--left p {
-  word-spacing: 1px;
-  line-height: 24px;
-}
-#why-us > h2 {
-  padding-bottom: 20px;
-}
-#why-us > p {
-  margin-bottom: 20px;
-  width: 80%;
-}
-/*** WHY SECTION END ***/
-
-/*** SERVICES START ***/
-
-#services-heading {
-  display: flex;
-  width: 100%;
-}
-#services-heading--1 {
-  width: 50%;
-}
-#services-heading--1 h2 {
-  text-shadow: 4px 3px 6px rgba(0, 0, 0, 0.2);
-}
-#services-heading--2 {
-  width: 50%;
-}
-#services-heading--2 p {
-  font-size: 15px;
-  font-weight: 300;
-}
-.services-div {
-  align-items: center;
-  gap: 30px;
-}
-.services-div--item {
-  padding: 15px;
-}
-.services-div--item img {
-  height: 200px;
-  width: 200px;
-  object-fit: cover;
-  margin: 10px 0;
-}
-.services-div--item h1 {
-  font-size: 22px;
-  font-weight: 600;
-  margin-bottom: 10px;
-}
-.services-div--item p {
-  margin-bottom: 20px;
-  text-align: left;
-}
-
-/*** SERVICES END ***/
-
-/*** PROCESS SECTION START ***/
-#process {
-  margin-top: -150px;
-}
-
-.process-div {
-  align-items: center;
-}
-
-.process-div--item {
-  padding: 20px;
-  align-items: center;
-  text-align: center;
-  margin-top: 20px;
-  margin-bottom: 10px;
-}
-
-.process-item--1 span {
-  font-size: 22px;
-  background-color: #dadada;
-  color: #000;
-  border-radius: 50%;
-  padding: 10px 20px;
-}
-.process-item--1 h1 {
-  font-size: 18px;
-  font-weight: 500;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  color: var(--primary-green);
-}
-.process-item--1 p {
-  font-size: 15px;
-  font-weight: 100;
-  color: var(--secondary-grey);
-  text-align: left;
-  margin-bottom: 20px;
-}
-
-.process-item--2 img {
-  width: 200px;
-  height: 180px;
-  object-fit: cover;
-}
-
-/*** PROCESS SECTION END ***/
-
 /*** ABOUT PAGE START ***/
 
-#about-page--header {
-  padding: 50px 40px;
-  padding-bottom: 0px;
+#about-page {
+  padding-top: 150px;
+  width: 100%;
 }
-#about-page--header h1 {
-  font-size: 44px;
-  font-weight: 100;
-  margin-bottom: 20px;
-  color: var(--primary-blue);
+#about-intro {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-bottom: 50px;
 }
-#about-page--header h3 {
-  font-size: 17px;
-  font-weight: 300;
-  max-width: 1500px;
-  margin-bottom: 30px;
+#about-intro--1 {
+  width: 60%;
 }
-#about-page--why {
-  padding: 50px 40px;
-  padding-bottom: 0px;
-}
-#about-page--why h1 {
-  font-size: 44px;
-  font-weight: 300;
-  margin-bottom: 20px;
-  color: var(--primary-blue);
-}
-.about-why--item {
-  margin-bottom: 20px;
-}
-#about-page--footer {
-  padding: 50px 40px;
-  padding-bottom: 0px;
-}
-#about-page--footer h2 {
-  font-size: 32px;
-  font-weight: 300;
-  margin-bottom: 20px;
-  color: var(--primary-blue);
-}
-#about-page--footer h4 {
-  font-size: 18px;
-  font-weight: 300;
+#about-intro--1 h1 {
   margin-bottom: 40px;
+}
+#about-page--2 {
+  width: 40%;
+}
+#about-intro--2 img {
+  height: 400px;
+  width: 400px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+#about-mission h4 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+#about-work h4 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+#about-why h4 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+#about-cta #contactBtn a button {
+  font-size: 48px;
 }
 
 /*** ABOUT PAGE END ***/
-
-/*** PROCESS PAGE START ***/
-#process-page {
-  padding-top: 120px;
-}
-/*** PROCESS PAGE END ***/
 
 /*** PROJECT PAGE START ***/
 
@@ -1112,101 +981,52 @@ textarea {
 
   /*** ABOUT SECTION END ***/
 
-  /*** WHY SECTION START ***/
+  /*** ABOUT PAGE START ***/
 
-  #why-us {
-    padding-top: 0px;
+  #about-page {
+    padding-top: 100px;
+    width: 100%;
+  }
+  #about-intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: 50px;
+  }
+  #about-intro--1 {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  #about-intro--1 h1 {
+    margin-bottom: 40px;
+  }
+  #about-page--2 {
+    width: 100%;
+  }
+  #about-intro--2 img {
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+  }
+  #about-mission h4 {
+    padding-top: 30px;
     padding-bottom: 30px;
   }
-
-  #why-us > h1 {
-    font-size: 18px;
-    font-weight: 300;
-    text-shadow: 4px 3px 6px rgba(0, 0, 0, 0.2);
+  #about-work h4 {
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
-  .why-us--right img {
-    height: 200px;
-    width: 200px;
-    object-fit: cover;
+  #about-why h4 {
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
-  .why-us--item {
-    display: grid;
-    grid-template-columns: 1fr;
-    align-items: center;
-    gap: 15px;
-  }
-  .why-us--left h2 {
-    margin-bottom: 20px;
-    font-size: 16px;
-  }
-  .why-us--left p {
-    word-spacing: 1px;
-    line-height: 24px;
-    font-size: 12px;
-  }
-  #why-us > h2 {
-    padding-bottom: 15px;
-    font-size: 18px;
-  }
-  #why-us > p {
-    margin-bottom: 20px;
-    width: 100%;
-    font-size: 12px;
-  }
-  /*** WHY SECTION END ***/
-
-  /*** SERVICES START ***/
-
-  #services {
-    padding-top: 0;
+  #about-cta #contactBtn a button {
+    font-size: 30px;
   }
 
-  #services-heading {
-    display: grid;
-    grid-template-columns: 1fr;
-    width: 100%;
-  }
-  #services-heading--1 {
-    width: 100%;
-  }
-  #services-heading--1 h2 {
-    text-shadow: 4px 3px 6px rgba(0, 0, 0, 0.2);
-    margin-bottom: 10px;
-  }
-  #services-heading--2 {
-    width: 100%;
-  }
-  #services-heading--2 p {
-    font-size: 12px;
-    font-weight: 300;
-  }
-  .services-div {
-    align-items: start;
-    gap: 15px;
-    width: 100%;
-  }
-  .services-div--item {
-    padding: 15px;
-    width: 100%;
-  }
-  .services-div--item img {
-    height: 200px;
-    width: 200px;
-    object-fit: cover;
-    margin: 0px;
-  }
-  .services-div--item h1 {
-    font-size: 18px;
-    font-weight: 600;
-    margin-bottom: 10px;
-  }
-  .services-div--item p {
-    margin-bottom: 20px;
-    text-align: left;
-    font-size: 12px;
-  }
-
-  /*** SERVICES END ***/
+  /*** ABOUT PAGE END ***/
 
   /*** FAQ SECTION START ***/
 
@@ -1829,94 +1649,6 @@ textarea {
 
   /*** ABOUT SECTION END ***/
 
-  /*** WHY SECTION START ***/
-
-  #why-us {
-    padding-top: 0px;
-  }
-
-  #why-us > h1 {
-    font-size: 24px;
-    font-weight: 300;
-    text-shadow: 4px 3px 6px rgba(0, 0, 0, 0.2);
-  }
-  .why-us--right img {
-    height: 200px;
-    width: 200px;
-    object-fit: cover;
-  }
-  .why-us--item {
-    display: grid;
-    grid-template-columns: 1fr;
-    align-items: center;
-    gap: 20px;
-  }
-  .why-us--left h2 {
-    margin-bottom: 20px;
-    font-size: 20px;
-  }
-  .why-us--left p {
-    word-spacing: 1px;
-    line-height: 24px;
-  }
-  #why-us > h2 {
-    padding-bottom: 20px;
-  }
-  #why-us > p {
-    margin-bottom: 20px;
-    width: 80%;
-  }
-  /*** WHY SECTION END ***/
-
-  /*** SERVICES START ***/
-
-  #services {
-    padding-top: 0;
-  }
-
-  #services-heading {
-    display: grid;
-    grid-template-columns: 1fr;
-    width: 100%;
-  }
-  #services-heading--1 {
-    width: 100%;
-  }
-  #services-heading--1 h2 {
-    text-shadow: 4px 3px 6px rgba(0, 0, 0, 0.2);
-  }
-  #services-heading--2 {
-    width: 100%;
-  }
-  #services-heading--2 p {
-    font-size: 15px;
-    font-weight: 300;
-  }
-  .services-div {
-    align-items: center;
-    gap: 30px;
-  }
-  .services-div--item {
-    padding: 15px;
-  }
-  .services-div--item img {
-    height: 200px;
-    width: 200px;
-    object-fit: cover;
-    margin: 10px 0;
-  }
-  .services-div--item h1 {
-    font-size: 22px;
-    font-weight: 600;
-    margin-bottom: 10px;
-  }
-  .services-div--item p {
-    margin-bottom: 20px;
-    text-align: left;
-  }
-
-  /*** SERVICES END ***/
-
   /*** FAQ SECTION START ***/
 
   #faq {
@@ -1985,13 +1717,6 @@ textarea {
 
   /*** FAQ SECTION END ***/
 
-  /*** PROCESS SECTION START ***/
-  #process {
-    margin-top: -250px;
-  }
-
-  /*** PROCESS SECTION END ***/
-
   /*** FOOTER START ***/
 
   .footer {
@@ -2035,46 +1760,47 @@ textarea {
 
   /*** ABOUT PAGE START ***/
 
-  #about-page--header {
-    padding: 0px;
-    padding-top: 20px;
+  #about-page {
+    padding-top: 100px;
+    width: 100%;
   }
-  #about-page--header h1 {
-    font-size: 24px;
-    font-weight: 100;
-    margin-bottom: 20px;
-    color: var(--primary-blue);
+  #about-intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: 50px;
   }
-  #about-page--header h3 {
-    font-size: 18px;
-    font-weight: 300;
+  #about-intro--1 {
+    width: 100%;
     margin-bottom: 30px;
   }
-  #about-page--why {
-    padding: 0px;
-  }
-  #about-page--why h1 {
-    font-size: 24px;
-    font-weight: 300;
-    margin-bottom: 20px;
-    color: var(--primary-blue);
-  }
-  .about-why--item {
-    margin-bottom: 20px;
-  }
-  #about-page--footer {
-    padding: 0px;
-  }
-  #about-page--footer h2 {
-    font-size: 20px;
-    font-weight: 300;
-    margin-bottom: 20px;
-    color: var(--primary-blue);
-  }
-  #about-page--footer h4 {
-    font-size: 18px;
-    font-weight: 300;
+  #about-intro--1 h1 {
     margin-bottom: 40px;
+  }
+  #about-page--2 {
+    width: 100%;
+  }
+  #about-intro--2 img {
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+  }
+  #about-mission h4 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  #about-work h4 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  #about-why h4 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  #about-cta #contactBtn a button {
+    font-size: 38px;
   }
 
   /*** ABOUT PAGE END ***/
@@ -2498,94 +2224,6 @@ textarea {
 
   /*** ABOUT SECTION END ***/
 
-  /*** WHY SECTION START ***/
-
-  #why-us {
-    padding-top: 0px;
-  }
-
-  #why-us > h1 {
-    font-size: 24px;
-    font-weight: 300;
-    text-shadow: 4px 3px 6px rgba(0, 0, 0, 0.2);
-  }
-  .why-us--right img {
-    height: 200px;
-    width: 200px;
-    object-fit: cover;
-  }
-  .why-us--item {
-    display: grid;
-    grid-template-columns: 1fr;
-    align-items: center;
-    gap: 20px;
-  }
-  .why-us--left h2 {
-    margin-bottom: 20px;
-    font-size: 20px;
-  }
-  .why-us--left p {
-    word-spacing: 1px;
-    line-height: 24px;
-  }
-  #why-us > h2 {
-    padding-bottom: 20px;
-  }
-  #why-us > p {
-    margin-bottom: 20px;
-    width: 80%;
-  }
-  /*** WHY SECTION END ***/
-
-  /*** SERVICES START ***/
-
-  #services {
-    padding-top: 0;
-  }
-
-  #services-heading {
-    display: grid;
-    grid-template-columns: 1fr;
-    width: 100%;
-  }
-  #services-heading--1 {
-    width: 100%;
-  }
-  #services-heading--1 h2 {
-    text-shadow: 4px 3px 6px rgba(0, 0, 0, 0.2);
-  }
-  #services-heading--2 {
-    width: 100%;
-  }
-  #services-heading--2 p {
-    font-size: 15px;
-    font-weight: 300;
-  }
-  .services-div {
-    align-items: center;
-    gap: 30px;
-  }
-  .services-div--item {
-    padding: 15px;
-  }
-  .services-div--item img {
-    height: 200px;
-    width: 200px;
-    object-fit: cover;
-    margin: 10px 0;
-  }
-  .services-div--item h1 {
-    font-size: 22px;
-    font-weight: 600;
-    margin-bottom: 10px;
-  }
-  .services-div--item p {
-    margin-bottom: 20px;
-    text-align: left;
-  }
-
-  /*** SERVICES END ***/
-
   /*** FAQ SECTION START ***/
 
   #faq {
@@ -2654,13 +2292,6 @@ textarea {
 
   /*** FAQ SECTION END ***/
 
-  /*** PROCESS SECTION START ***/
-  #process {
-    margin-top: -250px;
-  }
-
-  /*** PROCESS SECTION END ***/
-
   /*** FOOTER START ***/
 
   .footer {
@@ -2704,46 +2335,47 @@ textarea {
 
   /*** ABOUT PAGE START ***/
 
-  #about-page--header {
-    padding: 0px;
-    padding-top: 20px;
+  #about-page {
+    padding-top: 100px;
+    width: 100%;
   }
-  #about-page--header h1 {
-    font-size: 24px;
-    font-weight: 100;
-    margin-bottom: 20px;
-    color: var(--primary-blue);
+  #about-intro {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: 50px;
+    gap: 20px;
   }
-  #about-page--header h3 {
-    font-size: 18px;
-    font-weight: 300;
+  #about-intro--1 {
+    width: 60%;
     margin-bottom: 30px;
   }
-  #about-page--why {
-    padding: 0px;
-  }
-  #about-page--why h1 {
-    font-size: 24px;
-    font-weight: 300;
-    margin-bottom: 20px;
-    color: var(--primary-blue);
-  }
-  .about-why--item {
-    margin-bottom: 20px;
-  }
-  #about-page--footer {
-    padding: 0px;
-  }
-  #about-page--footer h2 {
-    font-size: 20px;
-    font-weight: 300;
-    margin-bottom: 20px;
-    color: var(--primary-blue);
-  }
-  #about-page--footer h4 {
-    font-size: 18px;
-    font-weight: 300;
+  #about-intro--1 h1 {
     margin-bottom: 40px;
+  }
+  #about-page--2 {
+    width: 40%;
+  }
+  #about-intro--2 img {
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    border-radius: 15px;
+  }
+  #about-mission h4 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  #about-work h4 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  #about-why h4 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  #about-cta #contactBtn a button {
+    font-size: 44px;
   }
 
   /*** ABOUT PAGE END ***/
