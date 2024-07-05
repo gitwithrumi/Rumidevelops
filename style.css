@@ -62,13 +62,31 @@ h6 {
 /* layout */
 
 /*** RESUSABLES START ***/
-
+#cta-div {
+  display: flex;
+  gap: 20px;
+}
 #contactBtn a button {
   border: none;
   border-radius: 8px;
   padding: 6px 20px;
   background-color: var(--primary-blue);
   border: 1px solid var(--primary-blue);
+  font-size: 30px;
+  color: #fff;
+  font-weight: 600;
+  font-family: cta;
+  font-stretch: ultra-expanded;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+#pricingBtn a button {
+  border: none;
+  border-radius: 8px;
+  padding: 6px 20px;
+  background-color: var(--primary-green);
+  border: 1px solid var(--primary-green);
   font-size: 30px;
   color: #fff;
   font-weight: 600;
@@ -159,6 +177,11 @@ h6 {
 
 #contactBtn a button:hover {
   color: rgb(249, 48, 48);
+  border: 1px solid var(--secondary-black);
+  background-color: #fff;
+}
+#pricingBtn a button:hover {
+  color: #000;
   border: 1px solid var(--secondary-black);
   background-color: #fff;
 }
@@ -370,6 +393,10 @@ h6 {
   font-size: 48px;
   margin-top: 30px;
 }
+#problems #pricingBtn a button {
+  font-size: 48px;
+  margin-top: 30px;
+}
 #problems span {
   color: var(--primary-blue);
   font-size: 20px;
@@ -560,9 +587,12 @@ textarea {
   padding: 10px 28px;
   font-size: 48px;
   cursor: pointer;
-  display: inline-block;
   letter-spacing: 0.5px;
   font-weight: 900;
+}
+#plan-container #pricingBtn a button {
+  padding: 10px 28px;
+  font-size: 48px;
 }
 /*** PLAN SECTION END ***/
 
@@ -657,7 +687,10 @@ textarea {
   padding-top: 30px;
   padding-bottom: 30px;
 }
-#about-cta #contactBtn a button {
+#about-page #contactBtn a button {
+  font-size: 48px;
+}
+#about-page #pricingBtn a button {
   font-size: 48px;
 }
 
@@ -783,6 +816,9 @@ textarea {
 
   /*** RESUSABLES START ***/
 
+  #cta-div {
+    flex-direction: column;
+  }
   #contactBtn a button {
     border: none;
     border-radius: 6px;
@@ -909,6 +945,10 @@ textarea {
     font-size: 30px;
     margin-top: 30px;
   }
+  #problems #pricingBtn a button {
+    font-size: 30px;
+    margin-top: 30px;
+  }
   #problems span {
     color: var(--primary-blue);
     font-size: 14px;
@@ -1029,6 +1069,14 @@ textarea {
     letter-spacing: 0.5px;
     font-weight: 900;
   }
+  #plan-container #pricingBtn a button {
+    padding: 10px 28px;
+    font-size: 28px;
+    cursor: pointer;
+    display: inline-block;
+    letter-spacing: 0.5px;
+    font-weight: 900;
+  }
   /*** PLAN SECTION END ***/
 
   /*** ABOUT SECTION START ***/
@@ -1119,7 +1167,10 @@ textarea {
     padding-top: 30px;
     padding-bottom: 30px;
   }
-  #about-cta #contactBtn a button {
+  #about-page #contactBtn a button {
+    font-size: 30px;
+  }
+  #about-page #pricingBtn a button {
     font-size: 30px;
   }
 
