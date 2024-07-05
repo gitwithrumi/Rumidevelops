@@ -284,7 +284,7 @@ h6 {
 }
 #home-part--1 h1 {
   margin-bottom: 15px;
-  font-size: 44px;
+  font-size: 42px;
   font-weight: 200;
   word-spacing: 2px;
 }
@@ -294,14 +294,14 @@ h6 {
 }
 #home-part--1 h3 {
   margin-bottom: 30px;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 100;
   word-spacing: 1px;
   line-height: 32px;
 }
 #home-part--1 h3 span {
   color: var(--primary-green);
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 300;
 }
 #home-part--1 h3 span.internal-problem {
@@ -311,7 +311,7 @@ h6 {
 #home-part--1 h3 a {
   color: rgb(249, 48, 48);
   font-weight: 600;
-  font-size: 24px;
+  font-size: 22px;
 }
 #home-part--1 #contactBtn a button {
   padding: 10px 28px;
@@ -662,6 +662,103 @@ textarea {
 }
 
 /*** ABOUT PAGE END ***/
+
+/*** PRICING PAGE START ***/
+
+#pricing {
+  padding-top: 20px;
+  width: 100%;
+}
+#pricing-header h1 {
+  font-size: 64px;
+  line-height: 60px;
+  font-weight: 900;
+  font-family: bigheader;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+#pricing-header h3 {
+  font-size: 20px;
+  font-weight: 100;
+}
+#pricing-header {
+  padding-bottom: 10px;
+}
+#pricing-offers {
+  padding-top: 20px;
+}
+#pricing-offers h1 {
+  font-size: 54px;
+  line-height: 50px;
+  font-weight: 900;
+  font-family: bigheader;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+#pricing-offers--standard {
+  background-color: #dadada;
+  padding: 20px 70px;
+  border: 2px solid #333;
+  border-radius: 15px;
+}
+#pricing-offers--standard h2 {
+  margin-bottom: 20px;
+}
+#pricing-offers--fb {
+  display: inline-block;
+  text-align: center;
+  margin-bottom: 50px;
+}
+#standard-features ul {
+  list-style: none;
+}
+#standard-benefits ul {
+  list-style: none;
+}
+#standard-price h4 {
+  margin-bottom: 20px;
+}
+#standard-price h4 span {
+  font-size: 30px;
+  font-weight: 900;
+}
+#standard-price #contactBtn a button {
+  margin-top: 20px;
+  font-size: 48px;
+}
+#pricing-footer {
+  padding: 50px 100px;
+  padding-bottom: 10px;
+}
+#pricing-footer h4 {
+  font-size: 20px;
+  font-weight: 100;
+}
+#pricing-footer h3 {
+  font-size: 30px;
+  font-weight: 400;
+}
+#pricing-about {
+  padding: 50px 100px;
+}
+#pricing-about h2 {
+  font-size: 48px;
+  font-family: cta;
+}
+#pricing-about h4 {
+  font-size: 20px;
+  font-weight: 100;
+}
+#pricing-about h3 {
+  font-size: 24px;
+  font-weight: 100;
+}
+#pricing-cta #contactBtn a button {
+  font-size: 48px;
+}
+
+/*** PRICING PAGE END ***/
 
 /*** PROJECT PAGE START ***/
 
@@ -1027,6 +1124,105 @@ textarea {
   }
 
   /*** ABOUT PAGE END ***/
+
+  /*** PRICING PAGE START ***/
+
+  #pricing {
+    padding-top: 20px;
+    width: 100%;
+  }
+  #pricing-header h1 {
+    font-size: 34px;
+    line-height: 32px;
+    font-weight: 900;
+    font-family: cta;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+  }
+  #pricing-header h3 {
+    font-size: 14px;
+    font-weight: 100;
+  }
+  #pricing-header {
+    padding-bottom: 0px;
+  }
+  #pricing-offers {
+    padding-top: 20px;
+  }
+  #pricing-offers h1 {
+    font-size: 34px;
+    line-height: 32px;
+    font-weight: 900;
+    font-family: cta;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    margin-top: 0px;
+  }
+  #pricing-offers--standard {
+    background-color: #dadada;
+    padding: 20px 20px;
+    border: 2px solid #333;
+    border-radius: 15px;
+  }
+  #pricing-offers--standard h2 {
+    font-size: 18px;
+    font-weight: 900;
+    margin-bottom: 20px;
+  }
+  #pricing-offers--fb {
+    display: inline-block;
+    text-align: left;
+    margin-bottom: 50px;
+  }
+  #standard-features ul {
+    list-style: none;
+  }
+  #standard-benefits ul {
+    list-style: none;
+  }
+  #standard-price h4 {
+    margin-bottom: 16px;
+  }
+  #standard-price h4 span {
+    font-size: 22px;
+    font-weight: 900;
+  }
+  #standard-price #contactBtn a button {
+    margin-top: 20px;
+    font-size: 26px;
+  }
+  #pricing-footer {
+    padding: 50px 40px;
+    padding-bottom: 10px;
+  }
+  #pricing-footer h4 {
+    font-size: 14px;
+    font-weight: 100;
+  }
+  #pricing-footer h3 {
+    font-size: 20px;
+    font-weight: 400;
+  }
+  #pricing-about {
+    padding: 50px 40px;
+  }
+  #pricing-about h2 {
+    font-size: 28px;
+    font-family: cta;
+  }
+  #pricing-about h4 {
+    font-size: 14px;
+    font-weight: 100;
+  }
+  #pricing-about h3 {
+    font-size: 20px;
+    font-weight: 100;
+  }
+  #pricing-cta #contactBtn a button {
+    font-size: 26px;
+  }
+
+  /*** PRICING PAGE END ***/
 
   /*** FAQ SECTION START ***/
 
