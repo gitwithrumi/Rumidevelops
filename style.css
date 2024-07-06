@@ -1197,6 +1197,10 @@ textarea {
   }
   #about-intro--1 h1 {
     margin-bottom: 40px;
+    font-size: 20px;
+  }
+  #about-intro--1 h3 {
+    font-size: 14px;
   }
   #about-page--2 {
     width: 100%;
@@ -1207,17 +1211,32 @@ textarea {
     object-fit: cover;
     border-radius: 15px;
   }
+  #about-mission h1 {
+    font-size: 20px;
+  }
   #about-mission h4 {
     padding-top: 30px;
     padding-bottom: 30px;
+    font-size: 12px;
+    font-weight: 100;
+  }
+  #about-work h1 {
+    font-size: 20px;
   }
   #about-work h4 {
     padding-top: 30px;
     padding-bottom: 30px;
+    font-size: 12px;
+    font-weight: 100;
+  }
+  #about-why h1 {
+    font-size: 20px;
   }
   #about-why h4 {
     padding-top: 30px;
     padding-bottom: 30px;
+    font-size: 12px;
+    font-weight: 100;
   }
   #about-page #contactBtn a button {
     font-size: 26px;
@@ -1235,8 +1254,8 @@ textarea {
     width: 100%;
   }
   #pricing-header h1 {
-    font-size: 34px;
-    line-height: 32px;
+    font-size: 24px;
+    line-height: 22px;
     font-weight: 900;
     font-family: cta;
     text-transform: uppercase;
@@ -1253,8 +1272,8 @@ textarea {
     padding-top: 20px;
   }
   #pricing-offers h1 {
-    font-size: 34px;
-    line-height: 32px;
+    font-size: 22px;
+    line-height: 20px;
     font-weight: 900;
     font-family: cta;
     text-transform: uppercase;
@@ -1268,7 +1287,7 @@ textarea {
     border-radius: 15px;
   }
   #pricing-offers--standard h2 {
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 900;
     margin-bottom: 20px;
   }
@@ -1279,15 +1298,22 @@ textarea {
   }
   #standard-features ul {
     list-style: none;
+    font-size: 15px;
   }
   #standard-benefits ul {
     list-style: none;
+    font-size: 15px;
+  }
+  #standard-benefits h4 {
+    font-size: 15px;
   }
   #standard-price h4 {
     margin-bottom: 16px;
+    font-size: 14px;
+    font-weight: 100;
   }
   #standard-price h4 span {
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 900;
   }
   #standard-price #contactBtn a button {
@@ -1303,14 +1329,15 @@ textarea {
     font-weight: 100;
   }
   #pricing-footer h3 {
-    font-size: 20px;
-    font-weight: 400;
+    font-size: 17px;
+    font-weight: 500;
   }
   #pricing-about {
     padding: 50px 40px;
   }
   #pricing-about h2 {
-    font-size: 28px;
+    font-size: 22px;
+    line-height: 22px;
     font-family: cta;
   }
   #pricing-about h4 {
@@ -1318,7 +1345,7 @@ textarea {
     font-weight: 100;
   }
   #pricing-about h3 {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 100;
   }
   #pricing-cta #contactBtn a button {
@@ -1515,55 +1542,6 @@ textarea {
   }
 
   /*** FOOTER END ***/
-
-  /*** ABOUT PAGE START ***/
-
-  #about-page--header {
-    padding: 0px;
-    padding-top: 20px;
-  }
-  #about-page--header h1 {
-    font-size: 18px;
-    font-weight: 100;
-    margin-bottom: 20px;
-    color: var(--primary-blue);
-  }
-  #about-page--header h3 {
-    font-size: 12px;
-    font-weight: 300;
-    margin-bottom: 30px;
-  }
-  #about-page--why {
-    padding: 0px;
-  }
-  #about-page--why h1 {
-    font-size: 18px;
-    font-weight: 300;
-    margin-bottom: 20px;
-    color: var(--primary-blue);
-  }
-  .about-why--item {
-    margin-bottom: 20px;
-  }
-  .about-why--item p {
-    font-size: 12px;
-  }
-  #about-page--footer {
-    padding: 0px;
-  }
-  #about-page--footer h2 {
-    font-size: 18px;
-    font-weight: 300;
-    margin-bottom: 20px;
-    color: var(--primary-blue);
-  }
-  #about-page--footer h4 {
-    font-size: 12px;
-    font-weight: 300;
-    margin-bottom: 40px;
-  }
-
-  /*** ABOUT PAGE END ***/
 
   /*** CONTACT START ***/
 
@@ -2031,6 +2009,10 @@ textarea {
   }
   #about-intro--1 h1 {
     margin-bottom: 40px;
+    font-size: 22px;
+  }
+  #about-intro--1 h3 {
+    font-size: 18px;
   }
   #about-page--2 {
     width: 100%;
@@ -2041,23 +2023,38 @@ textarea {
     object-fit: cover;
     border-radius: 15px;
   }
+  #about-mission h1 {
+    font-size: 20px;
+  }
   #about-mission h4 {
     padding-top: 30px;
     padding-bottom: 30px;
+    font-size: 17px;
+    font-weight: 100;
+  }
+  #about-work h1 {
+    font-size: 20px;
   }
   #about-work h4 {
     padding-top: 30px;
     padding-bottom: 30px;
+    font-size: 17px;
+    font-weight: 100;
+  }
+  #about-why h1 {
+    font-size: 20px;
   }
   #about-why h4 {
     padding-top: 30px;
     padding-bottom: 30px;
+    font-size: 17px;
+    font-weight: 100;
   }
   #about-page #cta-div #contactBtn a button {
-    font-size: 38px;
+    font-size: 34px;
   }
   #about-page #cta-div #pricingBtn a button {
-    font-size: 38px;
+    font-size: 34px;
   }
 
   /*** ABOUT PAGE END ***/
@@ -2645,6 +2642,10 @@ textarea {
   }
   #about-intro--1 h1 {
     margin-bottom: 40px;
+    font-size: 24px;
+  }
+  #about-intro--1 h3 {
+    font-size: 19px;
   }
   #about-page--2 {
     width: 40%;
@@ -2655,20 +2656,38 @@ textarea {
     object-fit: cover;
     border-radius: 15px;
   }
+  #about-mission h1 {
+    font-size: 22px;
+  }
   #about-mission h4 {
     padding-top: 30px;
     padding-bottom: 30px;
+    font-size: 18px;
+    font-weight: 100;
+  }
+  #about-work h1 {
+    font-size: 22px;
   }
   #about-work h4 {
     padding-top: 30px;
     padding-bottom: 30px;
+    font-size: 18px;
+    font-weight: 100;
+  }
+  #about-why h1 {
+    font-size: 22px;
   }
   #about-why h4 {
     padding-top: 30px;
     padding-bottom: 30px;
+    font-size: 18px;
+    font-weight: 100;
   }
-  #about-cta #contactBtn a button {
-    font-size: 44px;
+  #cta-div #contactBtn a button {
+    font-size: 36px;
+  }
+  #cta-div #pricingBtn a button {
+    font-size: 36px;
   }
 
   /*** ABOUT PAGE END ***/
