@@ -696,6 +696,10 @@ textarea {
 #about-intro--1 h1 {
   margin-bottom: 40px;
 }
+#about-intro--1 h3 {
+  font-size: 20px;
+  font-weight: 500;
+}
 #about-page--2 {
   width: 40%;
 }
@@ -705,17 +709,32 @@ textarea {
   object-fit: cover;
   border-radius: 15px;
 }
+#about-mission h1 {
+  font-size: 40px;
+}
 #about-mission h4 {
   padding-top: 30px;
   padding-bottom: 30px;
+  font-size: 20px;
+  font-weight: 100;
+}
+#about-work h1 {
+  font-size: 40px;
 }
 #about-work h4 {
   padding-top: 30px;
   padding-bottom: 30px;
+  font-size: 20px;
+  font-weight: 100;
+}
+#about-why h1 {
+  font-size: 40px;
 }
 #about-why h4 {
   padding-top: 30px;
   padding-bottom: 30px;
+  font-size: 20px;
+  font-weight: 100;
 }
 #about-page #contactBtn a button {
   font-size: 48px;
