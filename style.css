@@ -371,6 +371,7 @@ h6 {
   font-weight: 900;
   font-family: bigheader;
   text-transform: uppercase;
+  margin-bottom: 30px;
 }
 #problems h1 span {
   font-size: 20px;
