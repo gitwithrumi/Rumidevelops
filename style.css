@@ -790,6 +790,11 @@ textarea {
   text-transform: uppercase;
   margin-bottom: 30px;
 }
+#pricing-header h1 span {
+  color: white;
+  font-weight: 900;
+  font-family: bigheader;
+}
 #pricing-header h3 {
   font-size: 20px;
   font-weight: 100;
