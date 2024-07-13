@@ -22,7 +22,6 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"
     />
-    <script src="https://cdn.tailwindcss.com"></script>
     <script type="text/javascript">
       window.smartlook ||
         (function (d) {
@@ -92,122 +91,76 @@
       </div>
     </div>
     <div id="main">
-      <section class="projects">
-        <div
-          class="bg-white border-t border-b border-gray-200 border-gray-200 dark:bg-[#007bff] dark:border-gray-800"
-        >
-          <div class="container py-12">
-            <div
-              class="grid max-w-6xl gap-4 px-4 text-center md:gap-8 md:px-6 lg:gap-12 lg:grid-cols-2 xl:mx-auto"
-            >
-              <div class="flex flex-col justify-center space-y-2">
-                <h1
-                  class="text-3xl font-normal tracking-tighter sm:text-4xl md:text-5xl"
-                >
-                  My Projects
-                </h1>
-                <p class="text-gray-500 md:text-base/relaxed dark:text-white">
-                  A collection of my work, showcasing my skills and creativity.
-                </p>
-              </div>
+      <div class="projects">
+        <div class="project-item">
+          <div class="project-item--1">
+            <h2>RumiTravels</h2>
+            <p>
+              This website is a travel agency website a project of mine
+              showcasing my skills and experience in the field.
+            </p>
+            <div id="pricingBtn">
+              <a href="https://gitwithrumi.github.io/rumitravels/">
+                <button>Visit site</button>
+              </a>
             </div>
+          </div>
+          <div class="project-item--2">
+            <img
+              src="images/rumitravelslogo.webp"
+              width="300px"
+              height="300px"
+              alt="rumitravels"
+            />
           </div>
         </div>
-        <div class="container py-12">
-          <div
-            class="grid max-w-4xl gap-8 px-4 md:gap-10 md:px-6 lg:grid-cols-2 xl:max-w-5xl mx-auto"
-          >
-            <div class="flex flex-col justify-between space-y-4">
-              <h2 class="text-xl font-normal tracking-tighter sm:text-2xl">
-                RumiTravels
-              </h2>
-              <p class="text-gray-500 md:text-base/relaxed dark:text-white">
-                This website is a travel agency website a project of mine
-                showcasing my skills and experience in the field
-              </p>
-              <a
-                target="_blank"
-                class="inline-flex h-8 items-center rounded-md border border-gray-200 border-gray-200 bg-white px-4 text-sm font-medium shadow-sm transition-colors hover:bg-gray-100 hover:text-gray-900 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[#007bff] dark:border-gray-800 dark:border-gray-800 dark:bg-[#007bff] dark:hover:bg-gray-800 dark:hover:text-white dark:focus-visible:ring-gray-300"
-                href="https://gitwithrumi.github.io/rumitravels/"
-              >
-                View Project
+        <div class="project-item">
+          <div class="project-item--1">
+            <h2>HR Coders</h2>
+            <p>
+              This website is a project of mine showcasing my talent and
+              hardwork in the field. <br />
+              It is an animated+responsive multipage website with a contact page
+              using realtime api to send messages to my email.
+            </p>
+            <div id="pricingBtn">
+              <a href="https://gitwithrumi.github.io/HR-CODERS/">
+                <button>Visit site</button>
               </a>
-            </div>
-            <div class="flex items-center justify-center">
-              <img
-                src="images/rumitravelslogo.webp"
-                width="400"
-                height="200"
-                alt="Project Image"
-                class="rounded-lg object-cover object-center"
-                style="aspect-ratio: 400 / 200; object-fit: cover"
-              />
             </div>
           </div>
-          <div
-            class="grid max-w-4xl gap-8 px-4 md:gap-10 md:px-6 lg:grid-cols-2 xl:max-w-5xl mx-auto mt-8"
-          >
-            <div class="flex flex-col justify-between space-y-4">
-              <h2 class="text-xl font-normal tracking-tighter sm:text-2xl">
-                HR Coders
-              </h2>
-              <p class="text-gray-500 md:text-base/relaxed dark:text-white">
-                This website is a project of mine showcasing my talent and
-                hardwork in the field. It is an animated+responsive multipage
-                website with a contact page using realtime api to send messages
-                to my email.
-              </p>
-              <a
-                target="_blank"
-                class="inline-flex h-8 items-center rounded-md border border-gray-200 border-gray-200 bg-white px-4 text-sm font-medium shadow-sm transition-colors hover:bg-gray-100 hover:text-gray-900 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[#007bff] dark:border-gray-800 dark:border-gray-800 dark:bg-[#007bff] dark:hover:bg-gray-800 dark:hover:text-white dark:focus-visible:ring-gray-300"
-                href="https://gitwithrumi.github.io/HR-CODERS/"
-              >
-                View Project
-              </a>
-            </div>
-            <div class="flex items-center justify-center">
-              <img
-                src="images/hr-coderslogo.webp"
-                width="400"
-                height="200"
-                alt="Project Image"
-                class="rounded-lg object-cover object-center"
-                style="aspect-ratio: 400 / 200; object-fit: cover"
-              />
-            </div>
-          </div>
-          <div
-            class="grid max-w-4xl gap-8 px-4 md:gap-10 md:px-6 lg:grid-cols-2 xl:max-w-5xl mx-auto mt-8"
-          >
-            <div class="flex flex-col justify-between space-y-4">
-              <h2 class="text-xl font-normal tracking-tighter sm:text-2xl">
-                newsMonkey
-              </h2>
-              <p class="text-gray-500 md:text-base/relaxed dark:text-white">
-                newsMonkey is a webapp which is using newsapi to fetch news and
-                display it.
-              </p>
-              <a
-                target="_blank"
-                class="inline-flex h-8 items-center rounded-md border border-gray-200 border-gray-200 bg-white px-4 text-sm font-medium shadow-sm transition-colors hover:bg-gray-100 hover:text-gray-900 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[#007bff] dark:border-gray-800 dark:border-gray-800 dark:bg-[#007bff] dark:hover:bg-gray-800 dark:hover:text-white dark:focus-visible:ring-gray-300"
-                href="https://github.com/gitwithrumi/newsMonkey"
-              >
-                View Project
-              </a>
-            </div>
-            <div class="flex items-center justify-center">
-              <img
-                src="images/newsmonkeylogo.webp"
-                width="400"
-                height="200"
-                alt="Project Image"
-                class="rounded-lg object-cover object-center"
-                style="aspect-ratio: 400 / 200; object-fit: cover"
-              />
-            </div>
+          <div class="project-item--2">
+            <img
+              src="images/hr-coderslogo.webp"
+              width="300px"
+              height="300px"
+              alt="hr coders"
+            />
           </div>
         </div>
-      </section>
+        <div class="project-item">
+          <div class="project-item--1">
+            <h2>NewsMonkey</h2>
+            <p>
+              newsMonkey is a webapp which is using newsapi to fetch news and
+              display it.
+            </p>
+            <div id="pricingBtn">
+              <a href="https://github.com/gitwithrumi/newsMonkey">
+                <button>Visit site</button>
+              </a>
+            </div>
+          </div>
+          <div class="project-item--2">
+            <img
+              src="images/newsmonkeylogo.webp"
+              width="300px"
+              height="300px"
+              alt="newsMonkey"
+            />
+          </div>
+        </div>
+      </div>
       <footer class="footer">
         <!-- Contact Information -->
         <a href="index.html">

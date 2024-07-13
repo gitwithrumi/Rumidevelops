@@ -35,7 +35,7 @@ h6 {
 :root {
   /* --primary-blue: #007bff; */
   --primary-blue: #1e90ff;
-  --primary-green: #008080;
+  --primary-green: #179292;
   --secondary-grey: #6c757d;
   --secondary-black: #343a40;
   /* --supporting-color: rgb(249, 48, 48); */
@@ -887,7 +887,29 @@ textarea {
 /*** PROJECT PAGE START ***/
 
 .projects {
-  padding-top: 80px;
+  padding: 50px;
+  padding-top: 120px;
+}
+.projects .project-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+.project-item h2 {
+  color: white;
+  font-size: 40px;
+  font-weight: 100;
+  padding-bottom: 20px;
+}
+.project-item p {
+  font-size: 18px;
+  font-weight: 100;
+  padding-bottom: 40px;
+}
+.project-item img {
+  height: 250px;
+  width: 250px;
+  border-radius: 20px;
 }
 
 /*** PROJECT PAGE END ***/
@@ -1427,6 +1449,39 @@ textarea {
   }
 
   /*** PRICING PAGE END ***/
+
+  /*** PROJECT PAGE START ***/
+
+  .projects {
+    padding: 30px;
+    padding-top: 100px;
+  }
+  .projects .project-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+  .project-item h2 {
+    color: white;
+    font-size: 20px;
+    font-weight: 100;
+    padding-bottom: 20px;
+  }
+  .project-item p {
+    font-size: 12px;
+    font-weight: 100;
+    padding-bottom: 40px;
+  }
+  .project-item img {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 20px;
+    margin-top: 30px;
+  }
+
+  /*** PROJECT PAGE END ***/
 
   /*** FAQ SECTION START ***/
 
@@ -3116,7 +3171,7 @@ textarea {
   }
   #home-part--1 {
     height: 100%;
-    width: 65%;
+    width: 70%;
   }
   #home-part--1 h1 {
     margin-bottom: 25px;
@@ -3128,7 +3183,7 @@ textarea {
     text-shadow: var(--text-shadow);
   }
   #home-part--1 h3 {
-    margin-bottom: 30px;
+    margin-bottom: 60px;
     font-size: 18px;
     font-weight: 100;
     word-spacing: 2px;
@@ -3152,11 +3207,11 @@ textarea {
   }
   #home-part--2 {
     height: 100%;
-    width: 25%;
+    width: 20%;
   }
   #home-part--2 img {
-    height: 400px;
-    width: 350px;
+    height: 380px;
+    width: 300px;
     object-fit: cover;
     margin-left: 80px;
   }
