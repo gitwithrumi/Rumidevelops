@@ -40,6 +40,7 @@ h6 {
   --secondary-black: #343a40;
   /* --supporting-color: rgb(249, 48, 48); */
   --supporting-color: #ffd700;
+  --heading-white: #dadada;
   --text-shadow: 4px 3px 6px rgba(0, 0, 0, 0.2);
 }
 
@@ -211,6 +212,9 @@ h6 {
   text-shadow: 4px 3px 6px rgba(0, 0, 0, 0.2);
 }
 
+#faq > h1 {
+  color: var(--heading-white) !important;
+}
 .faq-container {
   max-width: 800px;
   margin: 50px auto;
@@ -325,7 +329,7 @@ h6 {
   font-size: 42px;
   font-weight: 100;
   word-spacing: 2px;
-  color: var(--primary-blue);
+  color: var(--heading-white);
   text-shadow: 4px 3px 6px rgba(0, 0, 0, 0.2);
 }
 #home-part--1 h3 {
@@ -596,7 +600,7 @@ textarea {
   text-transform: uppercase;
   font-family: cta;
   margin-bottom: 20px;
-  color: var(--primary-blue);
+  color: var(--heading-white);
   text-shadow: 4px 3px 6px rgba(0, 0, 0, 0.2);
   border-top: 3px solid #000;
   padding-top: 30px;
@@ -714,7 +718,7 @@ textarea {
 }
 #about-intro--1 h1 {
   margin-bottom: 40px;
-  color: var(--primary-blue);
+  color: var(--heading-white);
   text-shadow: 4px 3px 6px rgba(0, 0, 0, 0.2);
 }
 #about-intro--1 h3 {
@@ -733,7 +737,7 @@ textarea {
 }
 #about-mission h1 {
   font-size: 40px;
-  color: var(--primary-blue);
+  color: var(--heading-white);
   text-shadow: 4px 3px 6px rgba(0, 0, 0, 0.2);
 }
 #about-mission h4 {
@@ -745,7 +749,7 @@ textarea {
 }
 #about-work h1 {
   font-size: 40px;
-  color: var(--primary-blue);
+  color: var(--heading-white);
   text-shadow: 4px 3px 6px rgba(0, 0, 0, 0.2);
 }
 #about-work h4 {
@@ -757,7 +761,7 @@ textarea {
 }
 #about-why h1 {
   font-size: 40px;
-  color: var(--primary-blue);
+  color: var(--heading-white);
   text-shadow: 4px 3px 6px rgba(0, 0, 0, 0.2);
 }
 #about-why h4 {
@@ -1504,6 +1508,7 @@ textarea {
   #faq > h1 {
     font-size: 18px;
     padding-top: 30px;
+    color: var(--heading-white);
   }
 
   .faq-container {
@@ -2057,6 +2062,7 @@ textarea {
   #faq > h1 {
     font-size: 24px;
     padding-top: 50px;
+    color: var(--heading-white);
   }
 
   .faq-container {
@@ -2800,6 +2806,7 @@ textarea {
 
   #faq > h1 {
     font-size: 24px;
+    color: var(--heading-white);
   }
 
   .faq-container {
@@ -3007,6 +3014,9 @@ textarea {
     align-items: center;
     border-top: 3px solid #000;
   }
+  #faq > h1 {
+    color: var(--heading-white);
+  }
   #faq h1 {
     padding-top: 40px;
     color: var(--primary-blue);
@@ -3191,7 +3201,7 @@ textarea {
     line-height: 36px;
     font-weight: 200;
     word-spacing: 1.5px;
-    color: var(--primary-blue);
+    color: var(--heading-white);
     text-shadow: var(--text-shadow);
   }
   #home-part--1 h3 {
