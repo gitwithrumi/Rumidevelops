@@ -541,8 +541,12 @@ textarea {
   border: 1px solid var(--primary-green);
   border-radius: 10px;
   padding: 20px;
-  box-shadow: 10px 12px 0px -3px rgba(0, 0, 0, 0.4);
   color: #fff;
+  transition: all 0.3s linear;
+}
+.sales-growth--item:hover {
+  box-shadow: 8px 8px 0px -3px rgba(0, 0, 0, 0.4);
+  scale: 1.05;
 }
 .sales-growth--item h3 {
   font-size: 24px;
@@ -1149,7 +1153,11 @@ textarea {
     border: 1px solid var(--primary-green);
     border-radius: 10px;
     padding: 15px;
-    box-shadow: 12px 12px 0px -3px rgba(0, 0, 0, 0.4);
+  }
+
+  .sales-growth--item:hover {
+    box-shadow: 7px 7px 0px -3px rgba(0, 0, 0, 0.4);
+    scale: 1.05;
   }
   .sales-growth--item h3 {
     font-size: 14px;
@@ -2675,7 +2683,11 @@ textarea {
   .sales-growth--item {
     border-radius: 10px;
     padding: 15px;
-    box-shadow: 10px 10px 0px -3px rgba(0, 0, 0, 0.4);
+  }
+
+  .sales-growth--item:hover {
+    box-shadow: 8px 8px 0px -3px rgba(0, 0, 0, 0.4);
+    scale: 1.05;
   }
   .sales-growth--item h3 {
     font-size: 15px;
