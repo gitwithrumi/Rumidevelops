@@ -919,6 +919,9 @@ textarea {
   width: 250px;
   border-radius: 20px;
 }
+.project-item img:first-child {
+  object-fit: contain;
+}
 
 /*** PROJECT PAGE END ***/
 
