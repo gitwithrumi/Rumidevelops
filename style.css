@@ -619,12 +619,17 @@ textarea {
 }
 .plan-item p {
   color: white;
+  text-align: justify;
+  line-height: 20px;
+}
+.plan-item strong {
+  color: var(--secondary-black);
 }
 .plan-item i {
   font-size: 30px;
   margin-top: 30px;
   margin-left: 10px;
-  color: white;
+  color: var(--secondary-black);
 }
 #plan-container #contactBtn a button {
   padding: 10px 28px;
