@@ -33,12 +33,10 @@ h6 {
 }
 
 :root {
-  /* --primary-blue: #007bff; */
-  --primary-blue: #1e90ff;
+  --primary-blue: #1286fa;
   --primary-green: #179292;
   --secondary-grey: #6c757d;
-  --secondary-black: #343a40;
-  /* --supporting-color: rgb(249, 48, 48); */
+  --secondary-black: #151719;
   --supporting-color: #ffd700;
   --heading-white: #dadada;
   --text-shadow: 4px 3px 6px rgba(0, 0, 0, 0.2);
@@ -179,7 +177,6 @@ h6 {
   color: var(--supporting-color);
   font-size: 22px;
   text-shadow: var(--text-shadow);
-  text-decoration: underline var(--primary-green);
 }
 #nav-part--2 ul li a:active {
   color: var(--supporting-color);
@@ -325,7 +322,7 @@ h6 {
   width: 65%;
 }
 #home-part--1 h1 {
-  margin-bottom: 15px;
+  margin-bottom: 25px;
   font-size: 42px;
   font-weight: 100;
   word-spacing: 2px;
@@ -337,7 +334,7 @@ h6 {
   font-size: 20px;
   font-weight: 100;
   word-spacing: 1px;
-  line-height: 26px;
+  line-height: 28px;
   color: white;
 }
 #home-part--1 h3 span.internal-problem {
@@ -345,7 +342,7 @@ h6 {
   font-weight: 600;
 }
 #home-part--1 h3 a {
-  color: var(--primary-blue);
+  color: var(--secondary-black);
   font-weight: 600;
   font-size: 22px;
 }
@@ -999,10 +996,11 @@ textarea {
     width: 100%;
   }
   #home-part--1 h1 {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     font-size: 18px;
     font-weight: 200;
     word-spacing: 1px;
+    line-height: 22px;
     text-align: left;
   }
   #home-part--1 h1 span {
@@ -1011,22 +1009,22 @@ textarea {
   }
   #home-part--1 h3 {
     margin-bottom: 25px;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 100;
     word-spacing: 1px;
-    line-height: 22px;
-    text-align: left;
+    line-height: 16px;
+    text-align: justify;
   }
   #home-part--1 h3 span {
     color: white;
-    font-size: 15px;
+    font-size: 13px;
     font-weight: 300;
   }
   #home-part--1 h3 a {
-    color: var(--primary-blue);
+    color: var(--secondary-black);
     text-shadow: var(--text-shadow);
     font-weight: 600;
-    font-size: 16px;
+    font-size: 14px;
   }
   #home-part--1 #contactBtn a button {
     padding: 12px 20px;
@@ -1842,7 +1840,7 @@ textarea {
     color: var(--supporting-color) !important;
   }
   #home-part--1 h3 a {
-    color: var(--primary-blue) !important;
+    color: var(--secondary-black) !important;
     text-shadow: var(--text-shadow) !important;
     font-weight: 600;
     font-size: 16px;
@@ -2564,7 +2562,7 @@ textarea {
     font-weight: 300;
   }
   #home-part--1 h3 a {
-    color: rgb(249, 48, 48);
+    color: var(--secondary-black);
     font-weight: 600;
     font-size: 16px;
   }
@@ -3002,7 +3000,7 @@ textarea {
     font-weight: 600;
   }
   #home-part--1 h3 a {
-    color: var(--primary-blue);
+    color: var(--secondary-black);
     text-shadow: var(--text-shadow);
   }
 
@@ -3163,7 +3161,7 @@ textarea {
     font-weight: 300;
   }
   #home-part--1 h3 a {
-    color: var(--primary-blue);
+    color: var(--secondary-black);
     font-weight: 600;
     font-size: 16px;
   }
@@ -3199,7 +3197,7 @@ textarea {
     width: 70%;
   }
   #home-part--1 h1 {
-    margin-bottom: 25px;
+    margin-bottom: 35px;
     font-size: 36px;
     line-height: 36px;
     font-weight: 200;
@@ -3212,7 +3210,7 @@ textarea {
     font-size: 18px;
     font-weight: 100;
     word-spacing: 2px;
-    line-height: 24px;
+    line-height: 28px;
   }
   #home-part--1 h3 span.internal-problem {
     color: white;
@@ -3220,7 +3218,7 @@ textarea {
     font-weight: 900;
   }
   #home-part--1 h3 a {
-    color: var(--primary-blue);
+    color: var(--secondary-black);
     font-weight: 600;
     font-size: 20px;
   }
