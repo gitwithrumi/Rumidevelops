@@ -127,6 +127,27 @@ h6 {
 
 /*** RESUSABLES END ***/
 
+/*** LOADER START ***/
+
+#loader {
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--primary-blue);
+  position: fixed;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#loader h1 {
+  font-size: 110px;
+  font-family: cta;
+  font-weight: 900;
+  color: white;
+}
+
+/*** LOADER END ***/
+
 /*** NAVBAR START ***/
 
 #nav {
@@ -167,19 +188,32 @@ h6 {
 #nav-part--2 ul {
   display: flex;
   align-items: center;
-  gap: 30px;
+  gap: 20px;
   list-style: none;
 }
-#nav-part--2 ul li a {
-  transition: 0.2s linear all;
+#nav-part--2 a:before {
+  width: 0%;
+  border: 2px solid rgba(255, 255, 255, 0);
+  top: 0px;
+  right: 0px;
+  -webkit-transition-delay: 0.05s;
+  transition-delay: 0.25s;
+  bottom: 0px;
+  content: "";
+  position: absolute;
+  z-index: 5;
+  border-radius: 30px;
+  transition: 0.35s;
 }
-#nav-part--2 ul li a:hover {
-  color: var(--supporting-color);
-  font-size: 22px;
-  text-shadow: var(--text-shadow);
-}
-#nav-part--2 ul li a:active {
-  color: var(--supporting-color);
+
+#nav-part--2 a:hover:before,
+#nav-part--2 .active a:before {
+  left: 0;
+  width: 100%;
+  opacity: 1;
+  border-color: var(--supporting-color);
+  transition: 0.35s;
+  box-shadow: var(--text-shadow);
 }
 #nav-part--2 a {
   font-size: 18px;
@@ -187,6 +221,13 @@ h6 {
   text-decoration: none;
   color: #fff;
   font-family: poppins;
+  background: none;
+  border-radius: 22px;
+  transition: 0.35s;
+  position: relative;
+  overflow: hidden;
+  padding: 5px 10px;
+  border-radius: 30px;
 }
 #cta {
   position: absolute;
@@ -984,6 +1025,17 @@ textarea {
   }
 
   /*** RESUSABLES END ***/
+
+  /*** LOADER START ***/
+
+  #loader h1 {
+    font-size: 80px;
+    font-family: cta;
+    font-weight: 600;
+    color: white;
+  }
+
+  /*** LOADER END ***/
 
   /*** HOME START ***/
 
