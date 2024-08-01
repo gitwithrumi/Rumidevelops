@@ -1487,6 +1487,11 @@ textarea {
     font-size: 18px;
     font-weight: 900;
   }
+  #standard-price h4 span.cut {
+    text-decoration: line-through;
+    font-size: 16px;
+    font-weight: 100;
+  }
   #standard-price #contactBtn a button {
     margin-top: 20px;
     font-size: 26px;
