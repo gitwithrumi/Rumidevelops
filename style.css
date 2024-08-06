@@ -1654,10 +1654,9 @@ textarea {
     z-index: 1;
   }
   .logo img {
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-    object-fit: cover;
+    height: 60px;
+    width: 70px;
+    object-fit: contain;
     object-position: center;
   }
   #nav-part--2 {
@@ -2488,10 +2487,9 @@ textarea {
     z-index: 1;
   }
   .logo img {
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-    object-fit: cover;
+    height: 70px;
+    width: 80px;
+    object-fit: contain;
     object-position: center;
   }
   #nav-part--2 {
@@ -3164,10 +3162,9 @@ textarea {
     z-index: 1;
   }
   .logo img {
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-    object-fit: cover;
+    height: 50px;
+    width: 55px;
+    object-fit: contain;
     object-position: center;
   }
   #nav-part--2 {
