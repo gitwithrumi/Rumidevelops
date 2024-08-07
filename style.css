@@ -961,6 +961,11 @@ textarea {
   font-weight: 100;
   padding-bottom: 20px;
 }
+.project-item h2 span {
+  font-size: 20px;
+  font-weight: 100;
+  color: var(--supporting-color);
+}
 .project-item p {
   font-size: 18px;
   font-weight: 100;
@@ -1551,6 +1556,11 @@ textarea {
     font-size: 20px;
     font-weight: 100;
     padding-bottom: 20px;
+  }
+  .project-item h2 span {
+    font-size: 14px;
+    font-weight: 100;
+    color: var(--supporting-color);
   }
   .project-item p {
     font-size: 12px;
