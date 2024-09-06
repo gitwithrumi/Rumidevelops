@@ -21,7 +21,7 @@ html,
 body {
   height: 100%;
   width: 100%;
-  background-color: var(--primary-green);
+  background: var(--primary-background)
 }
 h1,
 h2,
@@ -40,6 +40,8 @@ h6 {
   --supporting-color: #ffd700;
   --heading-white: #dadada;
   --text-shadow: 4px 3px 6px rgba(0, 0, 0, 0.2);
+  --primary-background: linear-gradient(to right, #1A535C, #4591A7, #48B3AB);
+  --secondary-background: linear-gradient(120deg, #4682F4 0%, #6495ED 50%, #87BFFF 100%);
 }
 
 /*** BASE RULES END ***/
@@ -73,8 +75,7 @@ h6 {
   border: none;
   border-radius: 8px;
   padding: 6px 20px;
-  background-color: var(--supporting-color);
-  border: 1px solid var(--supporting-color);
+  background: linear-gradient(135deg, #ffd700 0%, #ffd700 50%, #ff9900 50%, #ff9900 100%);
   font-size: 30px;
   color: #000;
   font-weight: 600;
@@ -88,8 +89,7 @@ h6 {
   border: none;
   border-radius: 8px;
   padding: 6px 20px;
-  background-color: var(--primary-blue);
-  border: 1px solid var(--primary-blue);
+  background: var(--secondary-background);
   font-size: 30px;
   color: #fff;
   font-weight: 600;
@@ -132,7 +132,7 @@ h6 {
 #loader {
   height: 100vh;
   width: 100vw;
-  background-color: var(--primary-blue);
+  background: var(--secondary-background);
   position: fixed;
   z-index: 10;
   display: flex;
@@ -153,7 +153,7 @@ h6 {
 #nav {
   height: 80px;
   width: 100%;
-  background-color: var(--primary-blue);
+  background: var(--secondary-background);
   color: #fff;
   box-shadow: 0px 16px 8px -3px rgba(0, 0, 0, 0.1);
   display: flex;
@@ -256,7 +256,7 @@ h6 {
   max-width: 800px;
   margin: 50px auto;
   padding: 20px;
-  background-color: var(--primary-blue);
+  background: var(--secondary-background);
   border-radius: 8px;
   box-shadow: 0px 0px 16px 11px rgba(0, 0, 0, 0.1);
 }
@@ -309,7 +309,7 @@ h6 {
 /*** FOOTER START ***/
 
 .footer {
-  background-color: var(--primary-blue);
+  background: var(--secondary-background);
   color: #fff;
   padding: 50px 0;
   padding-top: 20px;
@@ -360,7 +360,7 @@ h6 {
   width: 100%;
   padding: 50px 40px;
   padding-top: 120px;
-  background-color: var(--primary-green);
+  background: var(--primary-background)
 }
 #home-part--1 {
   height: 100%;
@@ -368,18 +368,25 @@ h6 {
 }
 #home-part--1 h1 {
   margin-bottom: 25px;
-  font-size: 42px;
+  font-size: 48px;
   font-weight: 100;
+  font-family: cta;
   word-spacing: 2px;
   color: var(--heading-white);
   text-shadow: 4px 3px 6px rgba(0, 0, 0, 0.2);
+}
+#home-part--1 h1 span{
+  color: var(--supporting-color);
+  font-family: cta;
+  font-weight: 900;
+  font-size: 52px;
 }
 #home-part--1 h3 {
   margin-bottom: 30px;
   font-size: 20px;
   font-weight: 100;
   word-spacing: 1px;
-  line-height: 28px;
+  line-height: 38px;
   color: white;
 }
 #home-part--1 h3 span.internal-problem {
@@ -498,7 +505,7 @@ h6 {
 
 #selection-service {
   padding: 6px 10px;
-  background-color: var(--primary-green);
+  background: var(--primary-background);
   font-weight: 600;
   font-size: 16px;
   font-family: poppins;
@@ -523,7 +530,7 @@ textarea {
   border: none;
   border-radius: 10px;
   padding: 10px 22px;
-  background-color: var(--primary-blue);
+  background: var(--secondary-background);
   font-size: 16px;
   color: #fff;
   font-weight: 500;
@@ -536,14 +543,14 @@ textarea {
 /*** SALES SECTION START ***/
 
 #sales-growth--container {
-  background-color: var(--primary-green);
+  background: var(--primary-background)
 }
 
 #sales-growth {
   width: 100%;
   height: 100%;
   color: #000;
-  background-color: var(--primary-green);
+  background: var(--primary-background);
   padding-top: 50px;
 }
 
@@ -562,7 +569,7 @@ textarea {
 
 #sales-growth--2 {
   color: #000;
-  background-color: var(--primary-green);
+  background: var(--primary-background);
   padding-top: 0px;
   padding-bottom: 30px;
 }
@@ -583,8 +590,7 @@ textarea {
 }
 
 .sales-growth--item {
-  background-color: var(--primary-blue);
-  border: 1px solid var(--primary-green);
+  background: var(--secondary-background);
   border-radius: 10px;
   padding: 20px;
   color: #fff;
@@ -620,7 +626,7 @@ textarea {
 #sales-growth--2 #cta-div #pricingBtn a button {
   font-size: 48px;
   font-weight: 900;
-  background-color: var(--primary-blue);
+  background: var(--secondary-background);
   border: 1px solid var(--primary-green);
   border-radius: 10px;
   padding: 8px 20px;
@@ -635,7 +641,7 @@ textarea {
 
 #plan-container {
   padding-bottom: 50px;
-  background-color: var(--primary-green);
+  background: var(--primary-background)
 }
 #plan-container > h2 {
   font-size: 58px;
@@ -1004,7 +1010,6 @@ textarea {
     border-radius: 6px;
     padding: 6px 14px;
     background-color: var(--supporting-color);
-    border: 1px solid var(--supporting-color);
     font-size: 26px;
     color: #000;
     font-weight: 600;
@@ -1015,8 +1020,7 @@ textarea {
   #pricingBtn a button {
     border-radius: 6px;
     padding: 6px 14px;
-    background-color: var(--primary-blue);
-    border: 1px solid var(--primary-blue);
+    background: var(--secondary-background);
     font-size: 26px;
     color: #fff;
     font-weight: 600;
@@ -1074,9 +1078,11 @@ textarea {
     line-height: 22px;
     text-align: left;
   }
-  #home-part--1 h1 span {
-    color: var(--primary-blue);
-    font-weight: 500;
+  #home-part--1 h1 span{
+    color: var(--supporting-color);
+    font-family: cta;
+    font-weight: 900;
+    font-size: 22px;
   }
   #home-part--1 h3 {
     margin-bottom: 25px;
@@ -1182,7 +1188,7 @@ textarea {
     width: 100%;
     height: 100%;
     color: #000;
-    background-color: var(--primary-green);
+    background: var(--primary-background);
     padding-top: 0px;
     display: none;
   }
@@ -1206,7 +1212,7 @@ textarea {
 
   #sales-growth--2 {
     color: #000;
-    background-color: var(--primary-green);
+    background: var(--primary-background);
     padding-top: 30px;
   }
 
@@ -1226,7 +1232,6 @@ textarea {
   }
 
   .sales-growth--item {
-    border: 1px solid var(--primary-green);
     border-radius: 10px;
     padding: 15px;
   }
@@ -1597,7 +1602,7 @@ textarea {
     max-width: 800px;
     margin: 50px auto;
     padding: 15px;
-    background-color: var(--primary-blue);
+    background: var(--secondary-background);
     border-radius: 8px;
     box-shadow: 0px 0px 16px 11px rgba(0, 0, 0, 0.1);
   }
@@ -1654,7 +1659,7 @@ textarea {
   #nav {
     height: 80px;
     width: 100%;
-    background-color: var(--primary-blue);
+    background: var(--secondary-background);
     box-shadow: 0px 16px 8px -3px rgba(0, 0, 0, 0.1);
     display: flex;
     align-items: center;
@@ -1675,7 +1680,7 @@ textarea {
     top: 0%;
     height: 100vh;
     width: 100vw;
-    background-color: var(--primary-blue);
+    background: var(--secondary-background);
     z-index: 9;
     transition: 0.5s ease-out all;
   }
@@ -1721,7 +1726,7 @@ textarea {
   /*** FOOTER START ***/
 
   .footer {
-    background-color: var(--primary-blue);
+    background: var(--secondary-background);
     color: #fff;
     padding: 30px 0;
     text-align: center;
@@ -1794,7 +1799,7 @@ textarea {
 
   #selection-service {
     padding: 6px 10px;
-    background-color: var(--primary-green);
+    background: var(--primary-background);
     font-weight: 600;
     font-size: 12px;
     font-family: poppins;
@@ -1820,7 +1825,7 @@ textarea {
     border: none;
     border-radius: 10px;
     padding: 10px 22px;
-    background-color: var(--primary-green);
+    background: var(--primary-background);
     font-size: 16px;
     color: #fff;
     font-weight: 500;
@@ -1855,7 +1860,7 @@ textarea {
   #pricingBtn a button {
     border-radius: 10px;
     padding: 6px 12px;
-    background-color: var(--primary-blue);
+    background: var(--secondary-background);
     border: 1px solid var(--primary-blue);
     font-size: 24px;
     color: #fff;
@@ -1985,7 +1990,7 @@ textarea {
 
   #sales-growth--2 {
     color: #000;
-    background-color: var(--primary-green);
+    background: var(--primary-background);
     padding-top: 30px;
   }
 
@@ -2005,8 +2010,7 @@ textarea {
   }
 
   .sales-growth--item {
-    background-color: var(--primary-blue);
-    border: 1px solid var(--primary-blue);
+    background: var(--secondary-background);
     border-radius: 10px;
     padding: 15px;
     box-shadow: 12px 12px 0px -3px rgba(0, 0, 0, 0.4);
@@ -2203,7 +2207,7 @@ textarea {
   /*** FOOTER START ***/
 
   .footer {
-    background-color: var(--primary-blue);
+    background: var(--secondary-background);
     color: #fff;
     padding: 50px 0;
     text-align: center;
@@ -2446,7 +2450,7 @@ textarea {
 
   #selection-service {
     padding: 6px 10px;
-    background-color: var(--primary-green);
+    background: var(--primary-background);
     font-weight: 600;
     font-size: 14px;
     font-family: poppins;
@@ -2472,7 +2476,7 @@ textarea {
     border: none;
     border-radius: 10px;
     padding: 10px 22px;
-    background-color: var(--primary-green);
+    background: var(--primary-background);
     font-size: 16px;
     color: #fff;
     font-weight: 500;
@@ -2487,7 +2491,7 @@ textarea {
   #nav {
     height: 80px;
     width: 100%;
-    background-color: var(--primary-blue);
+    background: var(--secondary-background);
     box-shadow: 0px 16px 8px -3px rgba(0, 0, 0, 0.1);
     display: flex;
     align-items: center;
@@ -2509,7 +2513,7 @@ textarea {
     height: 100vh;
     width: 100vw;
     z-index: 9;
-    background-color: var(--primary-blue);
+    background: var(--secondary-background);
     transition: all 0.5s ease-out;
   }
   #navbar-active {
@@ -2576,7 +2580,7 @@ textarea {
     border: none;
     border-radius: 10px;
     padding: 9px 18px;
-    background-color: var(--primary-blue);
+    background: var(--secondary-background);
     border: 1px solid var(--primary-blue);
     font-size: 30px;
     color: #fff;
@@ -2623,9 +2627,11 @@ textarea {
     word-spacing: 1px;
     text-align: left;
   }
-  #home-part--1 h1 span {
-    color: var(--primary-blue);
-    font-weight: 500;
+  #home-part--1 h1 span{
+    color: var(--supporting-color);
+    font-family: cta;
+    font-weight: 900;
+    font-size: 28px;
   }
   #home-part--1 h3 {
     margin-bottom: 25px;
@@ -2723,7 +2729,7 @@ textarea {
     width: 100%;
     height: 100%;
     color: #000;
-    background-color: var(--primary-green);
+    background: var(--primary-background);
     padding-top: 0px;
     display: none;
   }
@@ -2747,7 +2753,7 @@ textarea {
 
   #sales-growth--2 {
     color: #000;
-    background-color: var(--primary-green);
+    background: var(--primary-background);
     padding-top: 30px;
   }
 
@@ -2893,7 +2899,7 @@ textarea {
     max-width: 800px;
     margin: 50px auto;
     padding: 20px;
-    background-color: var(--primary-blue);
+    background: var(--secondary-background);
     border-radius: 8px;
     box-shadow: 0px 0px 16px 11px rgba(0, 0, 0, 0.1);
   }
@@ -2946,7 +2952,7 @@ textarea {
   /*** FOOTER START ***/
 
   .footer {
-    background-color: var(--primary-blue);
+    background: var(--secondary-background);
     color: #fff;
     padding: 50px 0;
     text-align: center;
@@ -3063,7 +3069,7 @@ textarea {
     color: #000;
   }
   #pricingBtn a button {
-    background-color: var(--primary-blue);
+    background: var(--secondary-background);
     border: 1px solid var(--primary-blue);
   }
 
@@ -3107,7 +3113,7 @@ textarea {
     max-width: 800px;
     margin: 50px auto;
     padding: 20px;
-    background-color: var(--primary-blue);
+    background: var(--secondary-background);
     border-radius: 8px;
     box-shadow: 0px 0px 16px 11px rgba(0, 0, 0, 0.1);
   }
@@ -3162,7 +3168,7 @@ textarea {
   #nav {
     height: 80px;
     width: 100%;
-    background-color: var(--primary-blue);
+    background: var(--secondary-background);
     box-shadow: 0px 16px 8px -3px rgba(0, 0, 0, 0.1);
     display: flex;
     align-items: center;
@@ -3277,7 +3283,7 @@ textarea {
   #home-part--1 h1 {
     margin-bottom: 35px;
     font-size: 36px;
-    line-height: 36px;
+    line-height: 46px;
     font-weight: 200;
     word-spacing: 1.5px;
     color: var(--heading-white);
@@ -3288,7 +3294,7 @@ textarea {
     font-size: 18px;
     font-weight: 100;
     word-spacing: 2px;
-    line-height: 28px;
+    line-height: 38px;
   }
   #home-part--1 h3 span.internal-problem {
     color: white;
