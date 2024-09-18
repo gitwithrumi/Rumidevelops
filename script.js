@@ -40,48 +40,8 @@ function init() {
 init();
 
 var tl = gsap.timeline();
-let startTime = Date.now();
-let minimumDuration = 2000;
 
-function incrementLoader(actualDuration) {
-  return new Promise((resolve) => {
-    let a = 0;
-    let interval = setInterval(function () {
-      let elapsedTime = Date.now() - startTime;
-      let totalDuration = Math.max(actualDuration, minimumDuration);
-      a = Math.min((elapsedTime / totalDuration) * 100, 100);
-      document.querySelector("#loader h1").innerHTML = Math.floor(a) + "%";
-
-      if (a >= 100) {
-        clearInterval(interval);
-        resolve();
-      }
-    }, 20); // Update every 50ms for smoother increment
-  });
-}
-
-tl.from("#loader", {
-  left: "-100%",
-  duration: 1,
-  easing: "easeOut",
-  delay: 0,
-});
-
-window.addEventListener("load", function () {
-  let loadTime = Date.now() - startTime;
-
-  incrementLoader(loadTime).then(() => {
-    tl.to("#loader h1", {
-      duration: 0.5,
-    })
-      .to("#loader", {
-        left: "100%",
-        delay: 0.1,
-        duration: 1.2,
-        onComplete: function () {
-          document.getElementById("loader").style.display = "none";
-        },
-      })
+    tl
       .from(
         ".logo img, #nav-part--2 ul li, #nav-part--3 #contactBtn, #home-part--1 h1, #home-part--1 h3, #home-part--1 #contactBtn, #about-intro--1 h1, #about-intro--1 h3, #pricing-header h1, #pricing-header h3, #pricing-header h3, #pricing-offers>h1, .project-item h2, .project-item p, .project-item #pricingBtn, .project-item img",
         {
@@ -96,10 +56,7 @@ window.addEventListener("load", function () {
         opacity: 0,
         scale: 0.5,
       });
-  });
-});
 
-incrementLoader(minimumDuration);
 
 gsap.to("#sales-growth--1 h2", {
   transform: "translateX(-50%)",
