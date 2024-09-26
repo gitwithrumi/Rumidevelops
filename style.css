@@ -10,6 +10,10 @@
   font-family: cta;
   src: url("fonts/BebasNeue-Regular.ttf");
 }
+@font-face {
+  font-family: headline;
+  src: url("fonts/Alice-Regular.ttf");
+}
 /*** BASE RULES START ***/
 * {
   margin: 0;
@@ -40,8 +44,9 @@ h6 {
   --supporting-color: #ffd700;
   --heading-white: #dadada;
   --text-shadow: 4px 3px 6px rgba(0, 0, 0, 0.2);
-  --primary-background: linear-gradient(to right, #1A535C, #4591A7, #48B3AB);
-  --secondary-background: linear-gradient(120deg, #4682F4 0%, #6495ED 50%, #87BFFF 100%);
+  --primary-background: whitesmoke;
+  /* --primary-background: #dadada; */
+  --secondary-background: #8db3fb;
 }
 
 /*** BASE RULES END ***/
@@ -50,7 +55,7 @@ h6 {
 .container {
   max-width: 142rem;
   margin: 0 auto;
-  padding: 96px 30px;
+  padding: 96px 50px;
 }
 .grid {
   display: grid;
@@ -69,10 +74,11 @@ h6 {
 /*** RESUSABLES START ***/
 #cta-div {
   display: flex;
+  align-items: center;
   gap: 20px;
 }
 #contactBtn a button {
-  border: none;
+  border: 1px solid #000;
   border-radius: 8px;
   padding: 6px 20px;
   background: linear-gradient(135deg, #ffd700 0%, #ffd700 50%, #ff9900 50%, #ff9900 100%);
@@ -86,7 +92,7 @@ h6 {
   transition: all 0.25s ease;
 }
 #pricingBtn a button {
-  border: none;
+  border: 1px solid #000;
   border-radius: 8px;
   padding: 6px 20px;
   background: var(--secondary-background);
@@ -250,7 +256,7 @@ h6 {
 }
 
 #faq > h1 {
-  color: var(--heading-white) !important;
+  color: var(--secondary-black) !important;
 }
 .faq-container {
   max-width: 800px;
@@ -358,45 +364,55 @@ h6 {
   display: flex;
   height: 100vh;
   width: 100%;
-  padding: 50px 40px;
-  padding-top: 120px;
-  background: var(--primary-background)
+  padding: 50px;
+  padding-top: 18vh;
+  background: var(--primary-background);
 }
 #home-part--1 {
   height: 100%;
-  width: 65%;
+  width: 55%;
 }
 #home-part--1 h1 {
-  margin-bottom: 25px;
-  font-size: 48px;
+  margin-bottom: 40px;
+  font-size: 40px;
+  line-height: 42px;
   font-weight: 100;
-  font-family: cta;
   word-spacing: 2px;
-  color: var(--heading-white);
-  text-shadow: 4px 3px 6px rgba(0, 0, 0, 0.2);
+  color: #000;
+  font-family: poppins;
+  text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.8);
 }
 #home-part--1 h1 span{
   color: var(--supporting-color);
-  font-family: cta;
-  font-weight: 900;
-  font-size: 52px;
+  -webkit-text-stroke: 1px #000;
+  font-weight: 100;
+  font-family: headline;
+  font-size: 60px;
 }
 #home-part--1 h3 {
-  margin-bottom: 30px;
-  font-size: 20px;
+  margin-bottom: 35px;
+  width: 94%;
+  font-size: 18px;
   font-weight: 100;
   word-spacing: 1px;
-  line-height: 38px;
-  color: white;
+  line-height: 32px;
+  color: #000;
 }
-#home-part--1 h3 span.internal-problem {
-  color: var(--supporting-color);
+#home-part--1 h3 span {
+  color: whitesmoke;
+  font-family: headline;
+  font-size: 24px;
+  -webkit-text-stroke: .8px var(--primary-blue) ;
   font-weight: 600;
 }
 #home-part--1 h3 a {
   color: var(--secondary-black);
   font-weight: 600;
   font-size: 22px;
+}
+#home-part--1 #cta-div img{
+  height: 70px;
+  width: 60px;
 }
 #home-part--1 #contactBtn a button {
   padding: 10px 28px;
@@ -405,14 +421,19 @@ h6 {
   display: inline-block;
   letter-spacing: 0.5px;
   font-weight: 900;
+  margin-top: 30px;
 }
 #home-part--2 {
   height: 100%;
-  width: 25%;
+  width: 45%;
+}
+#home-part--2 #img-div{
+  display: flex;
+  align-items: center;
 }
 #home-part--2 img {
-  height: 400px;
-  width: 400px;
+  height: 190px;
+  width: 100%;
   object-fit: cover;
   margin-top: 20px;
   margin-left: 20px;
@@ -449,8 +470,8 @@ h6 {
   gap: 50px;
 }
 #problems-part--2 img {
-  height: 400px;
-  width: 350px;
+  height: 300px;
+  width: 400px;
   border-radius: 10px;
 }
 #problems #contactBtn a button {
@@ -575,30 +596,43 @@ textarea {
 }
 
 .sales-growth--heading {
-  font-size: 30px;
+  font-size: 26px;
   padding-bottom: 30px;
 }
 
 .sales-growth--heading span {
-  font-size: 38px;
+  font-size: 34px;
   font-weight: 600;
-  color: aqua;
+  font-family: headline;
+  -webkit-text-stroke: #2f2d2d .01px;
+  color: var(--supporting-color);
 }
 
 #sales-growth--div {
   gap: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .sales-growth--item {
   background: var(--secondary-background);
   border-radius: 10px;
-  padding: 20px;
+  padding: 20px 30px;
   color: #fff;
-  transition: all 0.3s linear;
+  transition: all 0.2s linear;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #000;
+}
+.sales-growth--item img{
+  height: 50px;
+  width: 60px;
 }
 .sales-growth--item:hover {
-  box-shadow: 8px 8px 0px -3px rgba(0, 0, 0, 0.4);
-  scale: 1.05;
+  box-shadow: 8px 8px 0px -3px rgba(255, 215, 0, .9);
+  scale: 1.01;
 }
 .sales-growth--item h3 {
   font-size: 24px;
@@ -608,9 +642,13 @@ textarea {
 }
 .sales-growth--item p {
   text-align: left;
+  color: #000;
 }
 .sales-growth--item p span {
   font-weight: 900;
+  color: #000;
+  -webkit-text-stroke: .01px white;
+  font-size: 22px;
 }
 #sales-growth--2 #cta-div #contactBtn a button {
   font-size: 48px;
@@ -648,39 +686,44 @@ textarea {
   text-transform: uppercase;
   font-family: cta;
   margin-bottom: 20px;
-  color: var(--heading-white);
+  color: var(--secondary-black);
   text-shadow: 4px 3px 6px rgba(0, 0, 0, 0.2);
   border-top: 3px solid #000;
   padding-top: 30px;
 }
 .plan-item {
-  padding: 20px;
+  padding: 0px;
+  margin: 20px 30px;
+}
+.plan-item img{
+  height: 100px;
+  width: 100px;
 }
 .plan-item h1 {
   font-size: 40px;
   margin-bottom: 10px;
-  color: white;
+  color: var(--secondary-black);
+  font-family: headline;
   text-shadow: 4px 3px 6px rgba(0, 0, 0, 0.2);
 }
 .plan-item h2 {
   font-size: 24px;
   margin-bottom: 20px;
-  color: white;
+  color: #000;
+  font-family: headline;
   text-shadow: 4px 3px 6px rgba(0, 0, 0, 0.2);
 }
 .plan-item p {
-  color: white;
+  color: #000;
   text-align: justify;
   line-height: 20px;
 }
 .plan-item strong {
-  color: var(--secondary-black);
-}
-.plan-item i {
-  font-size: 30px;
-  margin-top: 30px;
-  margin-left: 10px;
-  color: var(--secondary-black);
+  color: var(--secondary-background);
+  -webkit-text-stroke: .1px #000;
+  font-family: headline;
+  font-weight: 900;
+  font-size: 20px;
 }
 #plan-container #contactBtn a button {
   padding: 10px 28px;
@@ -719,12 +762,14 @@ textarea {
   font-weight: 300;
   font-size: 16px;
   margin-bottom: 10px;
-  color: white;
+  color: #000;
 }
 #about-us--2 h3 span {
-  font-weight: 500;
-  font-size: 18px;
-  color: #000;
+  font-weight: 900;
+  font-size: 24px;
+  font-family: headline;
+  color: var(--supporting-color);
+  -webkit-text-stroke: .1px var(--secondary-black);
 }
 #about-us--2 #contactBtn {
   padding-top: 20px;
@@ -739,10 +784,9 @@ textarea {
 
 #about-us--2 h1 {
   padding-top: 50px;
-  padding-left: 20px;
   font-size: 44px;
   font-weight: 600;
-  color: white;
+  color: var(--secondary-black);
 }
 #about-us--2 h1 span {
   color: var(--primary-blue);
@@ -771,13 +815,20 @@ textarea {
 }
 #about-intro--1 h1 {
   margin-bottom: 40px;
-  color: var(--heading-white);
+  color: var(--secondary-black);
   text-shadow: 4px 3px 6px rgba(0, 0, 0, 0.2);
 }
 #about-intro--1 h3 {
   font-size: 20px;
   font-weight: 500;
-  color: white;
+  color: #000;
+}
+#about-intro--1 h3 span {
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--supporting-color);
+  -webkit-text-stroke: #000 .1px;
+  font-family: headline;
 }
 #about-page--2 {
   width: 40%;
@@ -790,7 +841,7 @@ textarea {
 }
 #about-mission h1 {
   font-size: 40px;
-  color: var(--heading-white);
+  color: var(--secondary-black);
   text-shadow: 4px 3px 6px rgba(0, 0, 0, 0.2);
 }
 #about-mission h4 {
@@ -798,11 +849,18 @@ textarea {
   padding-bottom: 30px;
   font-size: 20px;
   font-weight: 100;
-  color: white;
+  color: #000;
+}
+#about-mission h4 span {
+  font-size: 22px;
+  font-weight: 900;
+  color: var(--supporting-color);
+  -webkit-text-stroke: #000 .1px;
+  font-family: headline;
 }
 #about-work h1 {
   font-size: 40px;
-  color: var(--heading-white);
+  color: var(--secondary-black);
   text-shadow: 4px 3px 6px rgba(0, 0, 0, 0.2);
 }
 #about-work h4 {
@@ -810,11 +868,18 @@ textarea {
   padding-bottom: 30px;
   font-size: 20px;
   font-weight: 100;
-  color: white;
+  color: #000;
+}
+#about-work h4 span{
+  font-size: 22px;
+  font-weight: 900;
+  color: var(--supporting-color);
+  -webkit-text-stroke: #000 .1px;
+  font-family: headline;
 }
 #about-why h1 {
   font-size: 40px;
-  color: var(--heading-white);
+  color: var(--secondary-black);
   text-shadow: 4px 3px 6px rgba(0, 0, 0, 0.2);
 }
 #about-why h4 {
@@ -822,7 +887,14 @@ textarea {
   padding-bottom: 30px;
   font-size: 20px;
   font-weight: 100;
-  color: white;
+  color: #000;
+}
+#about-why h4 span {
+  font-size: 22px;
+  font-weight: 900;
+  color: var(--supporting-color);
+  -webkit-text-stroke: #000 .1px;
+  font-family: headline;
 }
 #about-why h4 a {
   color: var(--primary-blue);
@@ -852,14 +924,14 @@ textarea {
   margin-bottom: 30px;
 }
 #pricing-header h1 span {
-  color: white;
+  color: var(--primary-blue);
   font-weight: 900;
   font-family: bigheader;
 }
 #pricing-header h3 {
   font-size: 20px;
   font-weight: 100;
-  color: white;
+  color: #000;
 }
 #pricing-header {
   padding-bottom: 10px;
@@ -919,12 +991,12 @@ textarea {
 #pricing-footer h4 {
   font-size: 20px;
   font-weight: 100;
-  color: white;
+  color: #000;
 }
 #pricing-footer h3 {
   font-size: 30px;
   font-weight: 400;
-  color: white;
+  color: #000;
   text-shadow: 4px 3px 6px rgba(0, 0, 0, 0.2);
 }
 #pricing-about {
@@ -937,12 +1009,12 @@ textarea {
 #pricing-about h4 {
   font-size: 20px;
   font-weight: 100;
-  color: white;
+  color: #000;
 }
 #pricing-about h3 {
   font-size: 24px;
   font-weight: 100;
-  color: white;
+  color: #000;
 }
 #pricing-cta #contactBtn a button {
   font-size: 48px;
@@ -962,7 +1034,7 @@ textarea {
   margin-bottom: 40px;
 }
 .project-item h2 {
-  color: white;
+  color: #000;
   font-size: 40px;
   font-weight: 100;
   padding-bottom: 20px;
@@ -970,7 +1042,7 @@ textarea {
 .project-item h2 span {
   font-size: 20px;
   font-weight: 100;
-  color: var(--supporting-color);
+  color: var(--primary-blue);
 }
 .project-item p {
   font-size: 18px;
@@ -990,7 +1062,7 @@ textarea {
 
 /*** RESPONSIVE LAYOUT START ***/
 
-@media (width <= 550px) {
+@media (width <= 551px) {
   .grid-four--cols {
     grid-template-columns: 1fr;
   }
@@ -1009,7 +1081,7 @@ textarea {
   #contactBtn a button {
     border-radius: 6px;
     padding: 6px 14px;
-    background-color: var(--supporting-color);
+    background: linear-gradient(135deg, #ffd700 0%, #ffd700 50%, #ff9900 50%, #ff9900 100%);
     font-size: 26px;
     color: #000;
     font-weight: 600;
@@ -1080,9 +1152,10 @@ textarea {
   }
   #home-part--1 h1 span{
     color: var(--supporting-color);
-    font-family: cta;
+    font-family: headline;
     font-weight: 900;
     font-size: 22px;
+    -webkit-text-stroke: #000 0.1px;
   }
   #home-part--1 h3 {
     margin-bottom: 25px;
@@ -1093,9 +1166,9 @@ textarea {
     text-align: justify;
   }
   #home-part--1 h3 span {
-    color: white;
     font-size: 13px;
     font-weight: 300;
+    font-family: headline;
   }
   #home-part--1 h3 a {
     color: var(--secondary-black);
@@ -1109,14 +1182,22 @@ textarea {
     cursor: pointer;
     display: inline-block;
   }
+  #home-part--1 #cta-div{
+    display: flex;
+    flex-direction: row;
+  }
+  #home-part--1 #cta-div img{
+    height: 40px;
+    width: 40px;
+  }
   #home-part--2 {
     height: 100%;
     width: 100%;
   }
   #home-part--2 img {
     height: 150px;
-    width: 150px;
-    object-fit: cover;
+    width: 40vw;
+    object-fit: contain;
   }
   /*** HOME END ***/
 
@@ -1151,7 +1232,7 @@ textarea {
   }
   #problems-part--2 img {
     height: 150px;
-    width: 120px;
+    width: 100%;
   }
   #problems #contactBtn a button {
     font-size: 26px;
@@ -1227,26 +1308,44 @@ textarea {
     color: aqua;
   }
 
-  #sales-growth--div {
-    gap: 25px;
-  }
+  
+#sales-growth--div {
+  gap: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
 
-  .sales-growth--item {
-    border-radius: 10px;
-    padding: 15px;
-  }
-
-  .sales-growth--item:hover {
-    box-shadow: 7px 7px 0px -3px rgba(0, 0, 0, 0.4);
-    scale: 1.05;
-  }
-  .sales-growth--item h3 {
+.sales-growth--item {
+  background: var(--secondary-background);
+  border-radius: 10px;
+  padding: 20px 30px;
+  color: #fff;
+  transition: all 0.2s linear;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #000;
+}
+.sales-growth--item img{
+  height: 50px;
+  width: 60px;
+}
+.sales-growth--item:hover {
+  box-shadow: 8px 8px 0px -3px rgba(255, 215, 0, .9);
+  scale: 1.01;
+}
+.sales-growth--item h3 {
     font-size: 14px;
     margin-bottom: 5px;
   }
   .sales-growth--item p {
     text-align: left;
     font-size: 12px;
+  }
+  .sales-growth--item p span{
+    font-size: 14px;
   }
   #sales-growth--2 #cta-div #contactBtn a button {
     font-size: 26px;
@@ -1324,10 +1423,12 @@ textarea {
   }
 
   #about-us--1 {
+    order: 1;
     padding: 0 30px;
   }
 
   #about-us--2 {
+    order: 2;
     padding: 0px;
   }
 
@@ -1350,6 +1451,7 @@ textarea {
     width: 150px;
     border-radius: 10px;
     box-shadow: 7px 7px 10px -3px rgba(0, 0, 0, 0.4);
+    margin-bottom: 20px;
   }
 
   #about-us--2 h1 {
@@ -1366,6 +1468,7 @@ textarea {
 
   #about-page {
     padding-top: 100px;
+    padding-bottom: 0px;
     width: 100%;
   }
   #about-intro {
@@ -1378,6 +1481,7 @@ textarea {
   #about-intro--1 {
     width: 100%;
     margin-bottom: 30px;
+    order: 2;
   }
   #about-intro--1 h1 {
     margin-bottom: 40px;
@@ -1386,7 +1490,10 @@ textarea {
   #about-intro--1 h3 {
     font-size: 14px;
   }
-  #about-page--2 {
+  #about-intro--1 h3 span{
+    font-size: 18px;
+  }
+  #about-intro--2 {
     width: 100%;
   }
   #about-intro--2 img {
@@ -1394,6 +1501,7 @@ textarea {
     width: 200px;
     object-fit: cover;
     border-radius: 15px;
+    margin-bottom: 20px;
   }
   #about-mission h1 {
     font-size: 20px;
@@ -1404,6 +1512,13 @@ textarea {
     font-size: 12px;
     font-weight: 100;
   }
+  #about-mission h4 span {
+    font-size: 16px;
+    font-weight: 900;
+    color: var(--supporting-color);
+    -webkit-text-stroke: #000 .1px;
+    font-family: headline;
+  }
   #about-work h1 {
     font-size: 20px;
   }
@@ -1413,6 +1528,13 @@ textarea {
     font-size: 12px;
     font-weight: 100;
   }
+  #about-work h4 span {
+    font-size: 16px;
+    font-weight: 900;
+    color: var(--supporting-color);
+    -webkit-text-stroke: #000 .1px;
+    font-family: headline;
+  }
   #about-why h1 {
     font-size: 20px;
   }
@@ -1421,6 +1543,13 @@ textarea {
     padding-bottom: 30px;
     font-size: 12px;
     font-weight: 100;
+  }
+  #about-why h4 span {
+    font-size: 16px;
+    font-weight: 900;
+    color: var(--supporting-color);
+    -webkit-text-stroke: #000 .1px;
+    font-family: headline;
   }
   #about-page #contactBtn a button {
     font-size: 26px;
@@ -1556,8 +1685,11 @@ textarea {
     justify-content: space-between;
     margin-bottom: 40px;
   }
+  .project-item--1{
+    order: 2;
+  }
   .project-item h2 {
-    color: white;
+    color: var(--secondary-black);
     font-size: 20px;
     font-weight: 100;
     padding-bottom: 20px;
@@ -1565,7 +1697,6 @@ textarea {
   .project-item h2 span {
     font-size: 14px;
     font-weight: 100;
-    color: var(--supporting-color);
   }
   .project-item p {
     font-size: 12px;
@@ -1841,7 +1972,7 @@ textarea {
     grid-template-columns: repeat(3, 1fr);
   }
   .grid-three--cols {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr !important;
   }
   .grid-two--cols {
     grid-template-columns: 1fr;
@@ -1852,8 +1983,6 @@ textarea {
   #contactBtn a button {
     border-radius: 20px;
     padding: 6px 12px !important;
-    background-color: var(--supporting-color) !important;
-    border: 1px solid var(--supporting-color) !important;
     font-size: 24px !important;
     color: #000 !important;
   }
@@ -2423,68 +2552,20 @@ textarea {
   }
 
   /*** PRICING PAGE END ***/
-  /*** CONTACT START ***/
 
-  #contact-heading {
-    padding: 20px;
-    padding-top: 120px;
-    width: 100%;
+  /*** PROJECTS PAGE START ***/
+
+  .projects .project-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 40px;
   }
-
-  #contact {
-    width: 100%;
-    height: 100%;
-    padding-right: 0px;
-    background-color: #fff;
-    padding-bottom: 50px;
+  .project-item--1{
+    order: 2;
   }
 
-  #contact-part--1 img {
-    width: 300px;
-    height: 300px;
-  }
-
-  #contact-part--2 {
-    padding: 30px;
-  }
-
-  #selection-service {
-    padding: 6px 10px;
-    background: var(--primary-background);
-    font-weight: 600;
-    font-size: 14px;
-    font-family: poppins;
-    color: #fff;
-  }
-
-  .mb-3 {
-    margin-bottom: 12px;
-  }
-  label {
-    display: block;
-    font-weight: 500;
-    font-family: poppins;
-    font-size: 14px;
-  }
-  input,
-  textarea {
-    width: 80%;
-    padding: 6px 12px;
-    font-size: 14px;
-  }
-  .btn-submit {
-    border: none;
-    border-radius: 10px;
-    padding: 10px 22px;
-    background: var(--primary-background);
-    font-size: 16px;
-    color: #fff;
-    font-weight: 500;
-    font-family: poppins;
-    cursor: pointer;
-  }
-
-  /*** CONTACT END ***/
+  /*** PROJECTS PAGE END ***/
 
   /*** NAVBAR START ***/
 
@@ -2580,8 +2661,8 @@ textarea {
     border: none;
     border-radius: 10px;
     padding: 9px 18px;
-    background: var(--secondary-background);
-    border: 1px solid var(--primary-blue);
+    background: linear-gradient(135deg, #ffd700 0%, #ffd700 50%, #ff9900 50%, #ff9900 100%) !important;
+    border: 1px solid #000 !important;
     font-size: 30px;
     color: #fff;
     font-weight: 600;
@@ -2629,8 +2710,7 @@ textarea {
   }
   #home-part--1 h1 span{
     color: var(--supporting-color);
-    font-family: cta;
-    font-weight: 900;
+    font-family: headline;
     font-size: 28px;
   }
   #home-part--1 h3 {
@@ -2663,9 +2743,9 @@ textarea {
     width: 100%;
   }
   #home-part--2 img {
-    height: 350px;
+    height: 200px;
     width: 320px;
-    object-fit: cover;
+    object-fit: contain;
   }
   /*** HOME END ***/
 
@@ -2698,8 +2778,9 @@ textarea {
     gap: 50px;
   }
   #problems-part--2 img {
-    height: 150px;
-    width: 120px;
+    height: 40vh;
+    width: 80vw;
+    object-fit: cover;
   }
   #problems #cta-div #contactBtn a button {
     font-size: 34px;
@@ -2769,7 +2850,10 @@ textarea {
   }
 
   #sales-growth--div {
-    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
   }
 
   .sales-growth--item {
@@ -2782,7 +2866,7 @@ textarea {
     scale: 1.05;
   }
   .sales-growth--item h3 {
-    font-size: 15px;
+    font-size: 20px;
   }
   .sales-growth--item p {
     text-align: left;
@@ -2847,6 +2931,8 @@ textarea {
 
   #about-us--2 {
     padding: 0px;
+    order: 2;
+    
   }
 
   #about-us--2 h3 {
@@ -2868,6 +2954,7 @@ textarea {
     width: 200px;
     border-radius: 10px;
     box-shadow: 7px 7px 10px -3px rgba(0, 0, 0, 0.4);
+    margin-bottom: 20px;
   }
 
   #about-us--2 h1 {
@@ -2998,14 +3085,16 @@ textarea {
   }
   #about-intro {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     width: 100%;
     padding-bottom: 50px;
     gap: 20px;
   }
   #about-intro--1 {
-    width: 60%;
-    margin-bottom: 30px;
+    width: 100%;
+    margin-bottom: 10px;
+    order: 2;
   }
   #about-intro--1 h1 {
     margin-bottom: 40px;
@@ -3266,63 +3355,4 @@ textarea {
   }
   /*** HOME END ***/
 }
-@media screen and (min-width: 1100px) {
-  /*** HOME START ***/
-
-  #home {
-    display: flex;
-    height: 100vh;
-    width: 100%;
-    padding: 50px 40px;
-    padding-top: 120px;
-  }
-  #home-part--1 {
-    height: 100%;
-    width: 70%;
-  }
-  #home-part--1 h1 {
-    margin-bottom: 35px;
-    font-size: 36px;
-    line-height: 46px;
-    font-weight: 200;
-    word-spacing: 1.5px;
-    color: var(--heading-white);
-    text-shadow: var(--text-shadow);
-  }
-  #home-part--1 h3 {
-    margin-bottom: 60px;
-    font-size: 18px;
-    font-weight: 100;
-    word-spacing: 2px;
-    line-height: 38px;
-  }
-  #home-part--1 h3 span.internal-problem {
-    color: white;
-    font-size: 19px;
-    font-weight: 900;
-  }
-  #home-part--1 h3 a {
-    color: var(--secondary-black);
-    font-weight: 600;
-    font-size: 20px;
-  }
-  #home-part--1 #contactBtn a button {
-    padding: 8px 16px;
-    font-size: 44px;
-    cursor: pointer;
-    display: inline-block;
-  }
-  #home-part--2 {
-    height: 100%;
-    width: 20%;
-  }
-  #home-part--2 img {
-    height: 380px;
-    width: 300px;
-    object-fit: cover;
-    margin-left: 80px;
-  }
-  /*** HOME END ***/
-}
-
 /*** RESPONSIVE LAYOUT END ***/

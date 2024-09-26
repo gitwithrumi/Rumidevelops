@@ -52,7 +52,7 @@ var tl = gsap.timeline();
           stagger: 0.11,
         }
       )
-      .from("#home-part--2 img, #about-intro--2 img", {
+      .from("#home-part--1 #cta-div img, #home-part--2 img, #about-intro--2 img", {
         opacity: 0,
         scale: 0.5,
       });
