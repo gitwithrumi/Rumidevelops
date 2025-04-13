@@ -133,27 +133,6 @@ h6 {
 
 /*** RESUSABLES END ***/
 
-/*** LOADER START ***/
-
-#loader {
-  height: 100vh;
-  width: 100vw;
-  background: var(--secondary-background);
-  position: fixed;
-  z-index: 10;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-#loader h1 {
-  font-size: 110px;
-  font-family: cta;
-  font-weight: 900;
-  color: white;
-}
-
-/*** LOADER END ***/
-
 /*** NAVBAR START ***/
 
 #nav {
@@ -165,14 +144,14 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 30px 40px;
+  padding: 30px 60px;
   position: fixed;
   z-index: 1;
   transition: 0.3s opacity linear;
 }
 .logo img {
-  height: 90px;
-  width: 100px;
+  height: 80px;
+  width: 90px;
   object-fit: contain;
   object-position: center;
 }
@@ -184,8 +163,6 @@ h6 {
   display: none;
 }
 #nav-part--2 {
-  position: absolute;
-  left: 15%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -353,7 +330,7 @@ h6 {
 }
 
 .copyright {
-  margin-top: 10px;
+  margin-top: 30px;
 }
 
 /*** FOOTER END ***/
@@ -421,7 +398,7 @@ h6 {
   display: inline-block;
   letter-spacing: 0.5px;
   font-weight: 900;
-  margin-top: 30px;
+  margin-top: 60px;
 }
 #home-part--2 {
   height: 100%;
@@ -435,10 +412,15 @@ h6 {
   height: 190px;
   width: 100%;
   object-fit: cover;
-  margin-top: 20px;
-  margin-left: 20px;
+  margin-left: 30px;
+  margin-top: 30px;
   border-radius: 10px;
 }
+
+#home-part--2 #img-div:first-child img{
+  margin-top: 0px;
+}
+
 /*** HOME END ***/
 
 /*** STAKES SECTION START ***/
@@ -1177,18 +1159,18 @@ textarea {
     font-size: 14px;
   }
   #home-part--1 #contactBtn a button {
-    padding: 12px 20px;
-    font-size: 24px;
+    padding: 12px 18px;
+    font-size: 20px;
     cursor: pointer;
     display: inline-block;
+    margin-top: 20px;
   }
   #home-part--1 #cta-div{
     display: flex;
     flex-direction: row;
   }
   #home-part--1 #cta-div img{
-    height: 40px;
-    width: 40px;
+    display: none;
   }
   #home-part--2 {
     height: 100%;
@@ -1198,6 +1180,11 @@ textarea {
     height: 150px;
     width: 40vw;
     object-fit: contain;
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+  #home-part--2 #img-div img:first-child{
+    margin-left: 0px;
   }
   /*** HOME END ***/
 
@@ -1890,7 +1877,7 @@ textarea {
   }
 
   .copyright {
-    margin-top: 10px;
+    margin-top: 25px;
     font-size: 10px;
   }
 
@@ -3072,7 +3059,7 @@ textarea {
   }
 
   .copyright {
-    margin-top: 10px;
+    margin-top: 30px;
   }
 
   /*** FOOTER END ***/
@@ -3262,19 +3249,15 @@ textarea {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px;
+    padding: 20px 30px;
     position: fixed;
     z-index: 1;
   }
   .logo img {
-    height: 50px;
-    width: 55px;
+    height: 60px;
+    width: 70px;
     object-fit: contain;
     object-position: center;
-  }
-  #nav-part--2 {
-    position: absolute;
-    left: 10%;
   }
   #nav-part--2 ul {
     display: flex;
