@@ -78,7 +78,7 @@ h6 {
   gap: 20px;
 }
 #contactBtn a button {
-  border: 1px solid #000;
+  border: 3px solid #000;
   border-radius: 8px;
   padding: 6px 20px;
   background: linear-gradient(135deg, #ffd700 0%, #ffd700 50%, #ff9900 50%, #ff9900 100%);
@@ -485,64 +485,6 @@ h6 {
 
 /*** STAKES SECTION END ***/
 
-/*** CONTACT START ***/
-
-#contact-heading {
-  padding: 20px 50px;
-  padding-top: 120px;
-  width: 50%;
-}
-
-#contact {
-  width: 100%;
-  height: 100%;
-  padding-right: 30px;
-  background-color: #fff;
-  padding-bottom: 50px;
-}
-
-#contact-part--1 img {
-  width: 500px;
-  height: 500px;
-}
-
-#selection-service {
-  padding: 6px 10px;
-  background: var(--primary-background);
-  font-weight: 600;
-  font-size: 16px;
-  font-family: poppins;
-  color: #fff;
-}
-
-.mb-3 {
-  margin-bottom: 12px;
-}
-label {
-  display: block;
-  font-weight: 500;
-  font-family: poppins;
-}
-input,
-textarea {
-  width: 80%;
-  padding: 8px 16px;
-  font-size: 18px;
-}
-.btn-submit {
-  border: none;
-  border-radius: 10px;
-  padding: 10px 22px;
-  background: var(--secondary-background);
-  font-size: 16px;
-  color: #fff;
-  font-weight: 500;
-  font-family: poppins;
-  cursor: pointer;
-}
-
-/*** CONTACT END ***/
-
 /*** SALES SECTION START ***/
 
 #sales-growth--container {
@@ -579,7 +521,7 @@ textarea {
 
 .sales-growth--heading {
   font-size: 26px;
-  padding-bottom: 30px;
+  margin-bottom: 50px;
 }
 
 .sales-growth--heading span {
@@ -598,45 +540,49 @@ textarea {
 }
 
 .sales-growth--item {
+  width: 30vw;
+  height: 32vw;
   background: var(--secondary-background);
   border-radius: 10px;
-  padding: 20px 30px;
-  color: #fff;
+  padding: 40px 30px;
   transition: all 0.2s linear;
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 1px solid #000;
+  border: 3px solid #000;
 }
 .sales-growth--item img{
   height: 50px;
   width: 60px;
+  margin-bottom: 20px;
 }
 .sales-growth--item:hover {
-  box-shadow: 8px 8px 0px -3px rgba(255, 215, 0, .9);
+  box-shadow: 8px 8px 0px -3px rgba(0, 0, 0, 0.4);
   scale: 1.01;
 }
 .sales-growth--item h3 {
-  font-size: 24px;
+  font-family: bigheader;
+  font-size: 55px;
   text-transform: uppercase;
+  text-align: center;
+  line-height: 30px;
   font-weight: 100;
-  margin-bottom: 10px;
+  margin-bottom: 40px;
 }
 .sales-growth--item p {
   text-align: left;
-  color: #000;
+  color: #fff;
 }
 .sales-growth--item p span {
   font-weight: 900;
   color: #000;
-  -webkit-text-stroke: .01px white;
-  font-size: 22px;
+  font-size: 18px;
 }
 #sales-growth--2 #cta-div #contactBtn a button {
   font-size: 48px;
   font-weight: 900;
   background-color: var(--supporting-color);
-  border: 1px solid var(--primary-green);
+  border: 3px solid var(--secondary-black);
   border-radius: 10px;
   padding: 8px 20px;
   margin-top: 45px;
@@ -661,13 +607,14 @@ textarea {
 
 #plan-container {
   padding-bottom: 50px;
-  background: var(--primary-background)
+  background: var(--primary-background);
 }
 #plan-container > h2 {
-  font-size: 58px;
+  font-size: 128px;
   text-transform: uppercase;
-  font-family: cta;
-  margin-bottom: 20px;
+  font-family: bigheader;
+  margin-bottom: 50px;
+  text-align: center;
   color: var(--secondary-black);
   text-shadow: 4px 3px 6px rgba(0, 0, 0, 0.2);
   border-top: 3px solid #000;
@@ -676,33 +623,32 @@ textarea {
 .plan-item {
   padding: 0px;
   margin: 20px 30px;
+  margin-bottom: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 30px;
 }
 .plan-item img{
-  height: 100px;
-  width: 100px;
-}
-.plan-item h1 {
-  font-size: 40px;
-  margin-bottom: 10px;
-  color: var(--secondary-black);
-  font-family: headline;
-  text-shadow: 4px 3px 6px rgba(0, 0, 0, 0.2);
+  height: 240px;
+  width: 280px;
 }
 .plan-item h2 {
-  font-size: 24px;
-  margin-bottom: 20px;
+  font-size: 54px;
+  margin-bottom: 40px;
   color: #000;
   font-family: headline;
   text-shadow: 4px 3px 6px rgba(0, 0, 0, 0.2);
 }
 .plan-item p {
   color: #000;
-  text-align: justify;
-  line-height: 20px;
+  text-align: left;
+  width: 85%;
+  line-height: 26px;
+  letter-spacing: .5px;
 }
 .plan-item strong {
-  color: var(--secondary-background);
-  -webkit-text-stroke: .1px #000;
+  color: var(--primary-blue);
   font-family: headline;
   font-weight: 900;
   font-size: 20px;
@@ -1126,17 +1072,17 @@ textarea {
   }
   #home-part--1 h1 {
     margin-bottom: 20px;
-    font-size: 18px;
+    font-size: 26px;
     font-weight: 200;
     word-spacing: 1px;
-    line-height: 22px;
+    line-height: 28px;
     text-align: left;
   }
   #home-part--1 h1 span{
     color: var(--supporting-color);
     font-family: headline;
     font-weight: 900;
-    font-size: 22px;
+    font-size: 30px;
     -webkit-text-stroke: #000 0.1px;
   }
   #home-part--1 h3 {
@@ -1156,7 +1102,7 @@ textarea {
     color: var(--secondary-black);
     text-shadow: var(--text-shadow);
     font-weight: 600;
-    font-size: 14px;
+    font-size: 13px;
   }
   #home-part--1 #contactBtn a button {
     padding: 12px 18px;
@@ -1286,7 +1232,7 @@ textarea {
 
   .sales-growth--heading {
     font-size: 18px;
-    padding-bottom: 30px;
+    margin-bottom: 30px;
   }
 
   .sales-growth--heading span {
@@ -1305,10 +1251,11 @@ textarea {
 }
 
 .sales-growth--item {
+  width: 100%;
+  height: 100%;
   background: var(--secondary-background);
   border-radius: 10px;
-  padding: 20px 30px;
-  color: #fff;
+  padding: 30px;
   transition: all 0.2s linear;
   display: flex;
   flex-direction: column;
@@ -1324,8 +1271,8 @@ textarea {
   scale: 1.01;
 }
 .sales-growth--item h3 {
-    font-size: 14px;
-    margin-bottom: 5px;
+    font-size: 34px;
+    margin-bottom: 20px;
   }
   .sales-growth--item p {
     text-align: left;
@@ -1363,25 +1310,36 @@ textarea {
 
   /*** PLAN SECTION START ***/
 
-  #plan-container > h2 {
-    font-size: 40px;
+  #plan-container {
+    padding-bottom: 50px;
+    background: var(--primary-background);
   }
-  .plan-item h1 {
-    font-size: 30px;
-    margin-bottom: 10px;
+  #plan-container > h2 {
+    font-size: 44px;
+    line-height: 44px;
+    margin-bottom: 40px;
+  }
+  .plan-item {
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
   }
   .plan-item h2 {
-    font-size: 18px;
+    font-size: 24px;
     margin-bottom: 20px;
   }
   .plan-item p {
-    font-size: 12px;
-    text-align: center;
+    font-size: 14px;
+    width: 100%;
   }
-  .plan-item i {
-    font-size: 30px;
-    margin-top: 30px;
-    margin-left: 10px;
+  .plan-item img{
+    height: 200px;
+    width: 200px;
   }
   #plan-container #contactBtn a button {
     padding: 10px 28px;
@@ -2690,15 +2648,16 @@ textarea {
   }
   #home-part--1 h1 {
     margin-bottom: 15px;
-    font-size: 24px;
+    font-size: 36px;
     font-weight: 200;
+    line-height: 38px;
     word-spacing: 1px;
     text-align: left;
   }
   #home-part--1 h1 span{
     color: var(--supporting-color);
     font-family: headline;
-    font-size: 28px;
+    font-size: 38px;
   }
   #home-part--1 h3 {
     margin-bottom: 25px;
@@ -2724,6 +2683,7 @@ textarea {
     font-family: cta;
     cursor: pointer;
     display: inline-block;
+    margin-bottom: 30px;
   }
   #home-part--2 {
     height: 100%;
@@ -2844,8 +2804,10 @@ textarea {
   }
 
   .sales-growth--item {
+    width: 100%;
+    height: 100%;
     border-radius: 10px;
-    padding: 15px;
+    padding: 30px;
   }
 
   .sales-growth--item:hover {
@@ -2853,11 +2815,15 @@ textarea {
     scale: 1.05;
   }
   .sales-growth--item h3 {
-    font-size: 20px;
+    font-size: 50px;
   }
   .sales-growth--item p {
-    text-align: left;
-    font-size: 13px;
+    text-align: left !important;
+    font-size: 20px;
+  }
+  .sales-growth--item p span {
+    text-align: left !important;
+    font-size: 22px;
   }
   #sales-growth--2 #cta-div #contactBtn a button {
     font-size: 36px;
@@ -2884,7 +2850,27 @@ textarea {
 
   /*** SALES SECTION END ***/
 
-  /*** PLAN SECTION START ***/
+  
+/*** PLAN SECTION START ***/
+
+#plan-container > h2 {
+  font-size: 94px;
+  line-height: 94px;
+}
+.plan-item {
+  padding: 0px;
+  margin: 20px 30px;
+  margin-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.plan-item h2{
+  font-size: 40px;
+}
+.plan-item p{
+  width: 100%;
+}
 
   #plan-container #contactBtn a button {
     padding: 10px 28px;
