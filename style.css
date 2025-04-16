@@ -233,11 +233,14 @@ h6 {
 }
 
 #faq > h1 {
-  color: var(--secondary-black) !important;
+  font-size: 84px;
+  font-family: bigheader;
+  text-transform: uppercase;
+  color: #000 !important;
 }
 .faq-container {
   max-width: 800px;
-  margin: 50px auto;
+  margin: 30px auto;
   padding: 20px;
   background: var(--secondary-background);
   border-radius: 8px;
@@ -246,7 +249,7 @@ h6 {
 
 .faq-item {
   margin-bottom: 20px;
-  border-bottom: 1px solid #e0e0e0;
+  border-bottom: 1px solid #f6f6f6;
   padding-bottom: 20px;
   position: relative;
 }
@@ -265,7 +268,8 @@ h6 {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.3s ease-out;
-  color: #dadada;
+  color: var(--secondary-black);
+  padding-top: 20px;
   margin-bottom: 20px;
   font-size: 16px;
   font-weight: 300;
@@ -562,7 +566,7 @@ h6 {
 }
 .sales-growth--item h3 {
   font-family: bigheader;
-  font-size: 55px;
+  font-size: 50px;
   text-transform: uppercase;
   text-align: center;
   line-height: 30px;
@@ -610,7 +614,7 @@ h6 {
   background: var(--primary-background);
 }
 #plan-container > h2 {
-  font-size: 128px;
+  font-size: 84px;
   text-transform: uppercase;
   font-family: bigheader;
   margin-bottom: 50px;
@@ -634,7 +638,7 @@ h6 {
   width: 280px;
 }
 .plan-item h2 {
-  font-size: 54px;
+  font-size: 40px;
   margin-bottom: 40px;
   color: #000;
   font-family: headline;
@@ -683,24 +687,24 @@ h6 {
   padding: 30px 30px;
 }
 
-#about-us--2 h1 {
-  text-shadow: 4px 3px 6px rgba(0, 0, 0, 0.2);
+#about-us--2 h2:first-child{
+  font-size: 40px;
+  font-weight: 900;
+  font-family: headline;
+  margin-bottom: 40px;
 }
+
 #about-us--2 h3 {
   font-weight: 300;
   font-size: 16px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   color: #000;
 }
 #about-us--2 h3 span {
   font-weight: 900;
-  font-size: 24px;
-  font-family: headline;
-  color: var(--supporting-color);
-  -webkit-text-stroke: .1px var(--secondary-black);
 }
-#about-us--2 #contactBtn {
-  padding-top: 20px;
+#about-us--2 #pricingBtn {
+  margin-top: 30px;
 }
 
 #about-us--1 img {
@@ -708,20 +712,6 @@ h6 {
   width: 400px;
   border-radius: 10px;
   box-shadow: 7px 7px 10px -3px rgba(0, 0, 0, 0.4);
-}
-
-#about-us--2 h1 {
-  padding-top: 50px;
-  font-size: 44px;
-  font-weight: 600;
-  color: var(--secondary-black);
-}
-#about-us--2 h1 span {
-  color: var(--primary-blue);
-}
-#call-to--actions {
-  display: flex;
-  gap: 30px;
 }
 
 /*** ABOUT SECTION END ***/
@@ -1008,6 +998,7 @@ h6 {
   }
   #contactBtn a button {
     border-radius: 6px;
+    border: 1.5px solid #000;
     padding: 6px 14px;
     background: linear-gradient(135deg, #ffd700 0%, #ffd700 50%, #ff9900 50%, #ff9900 100%);
     font-size: 26px;
@@ -1043,17 +1034,6 @@ h6 {
   }
 
   /*** RESUSABLES END ***/
-
-  /*** LOADER START ***/
-
-  #loader h1 {
-    font-size: 80px;
-    font-family: cta;
-    font-weight: 600;
-    color: white;
-  }
-
-  /*** LOADER END ***/
 
   /*** HOME START ***/
 
@@ -1282,6 +1262,7 @@ h6 {
     font-size: 14px;
   }
   #sales-growth--2 #cta-div #contactBtn a button {
+    border: 1.5px solid #000;
     font-size: 26px;
     font-weight: 900;
     border-radius: 10px;
@@ -1315,9 +1296,12 @@ h6 {
     background: var(--primary-background);
   }
   #plan-container > h2 {
-    font-size: 44px;
-    line-height: 44px;
+    font-size: 34px;
+    line-height: 34px;
     margin-bottom: 40px;
+  }
+  .plan-item--1{
+    order: 1;
   }
   .plan-item {
     padding: 0px;
@@ -1331,15 +1315,19 @@ h6 {
   }
   .plan-item h2 {
     font-size: 24px;
-    margin-bottom: 20px;
+    line-height: 24px;
+    margin-bottom: 25px;
   }
   .plan-item p {
     font-size: 14px;
     width: 100%;
   }
+  .plan-item p strong{
+    font-size: 16px;
+  }
   .plan-item img{
-    height: 200px;
-    width: 200px;
+    height: 100px;
+    width: 120px;
   }
   #plan-container #contactBtn a button {
     padding: 10px 28px;
@@ -1377,15 +1365,23 @@ h6 {
     padding: 0px;
   }
 
+  #about-us--2 h2:first-child{
+    font-size: 24px;
+  }
+
+  #about-us--2 h2{
+    font-size: 16px;
+    margin-top: 20px;
+  }
+
   #about-us--2 h3 {
     font-weight: 300;
     font-size: 12px;
     margin-bottom: 10px;
   }
   #about-us--2 h3 span {
-    font-weight: 500;
-    font-size: 14px;
-    color: var(--supporting-color);
+    font-weight: 600;
+    font-size: 13px;
   }
   #about-us--2 #contactBtn {
     padding-top: 20px;
@@ -1397,14 +1393,6 @@ h6 {
     border-radius: 10px;
     box-shadow: 7px 7px 10px -3px rgba(0, 0, 0, 0.4);
     margin-bottom: 20px;
-  }
-
-  #about-us--2 h1 {
-    padding-top: 20px;
-    padding-left: 0px;
-    font-size: 18px;
-    font-weight: 600;
-    text-shadow: 4px 3px 6px rgba(0, 0, 0, 0.2);
   }
 
   /*** ABOUT SECTION END ***/
@@ -1669,14 +1657,14 @@ h6 {
   }
 
   #faq > h1 {
-    font-size: 18px;
+    font-size: 32px;
+    line-height: 32px;
     padding-top: 30px;
-    color: var(--heading-white);
   }
 
   .faq-container {
     max-width: 800px;
-    margin: 50px auto;
+    margin: 30px auto;
     padding: 15px;
     background: var(--secondary-background);
     border-radius: 8px;
@@ -1840,76 +1828,6 @@ h6 {
   }
 
   /*** FOOTER END ***/
-
-  /*** CONTACT START ***/
-
-  #contact-heading {
-    padding: 20px;
-    padding-top: 120px;
-    width: 100%;
-  }
-
-  #contact {
-    width: 100%;
-    height: 100%;
-    padding-right: 0px;
-    padding-left: 20px;
-    background-color: #fff;
-    padding-bottom: 50px;
-  }
-
-  #contact-part--1 img {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    margin-left: 25vw;
-  }
-
-  #contact-part--2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 0px;
-  }
-
-  #selection-service {
-    padding: 6px 10px;
-    background: var(--primary-background);
-    font-weight: 600;
-    font-size: 12px;
-    font-family: poppins;
-    color: #fff;
-  }
-
-  .mb-3 {
-    margin-bottom: 12px;
-  }
-  label {
-    display: block;
-    font-weight: 500;
-    font-family: poppins;
-    font-size: 14px;
-  }
-  input,
-  textarea {
-    width: 80%;
-    padding: 6px 12px;
-    font-size: 12px;
-  }
-  .btn-submit {
-    border: none;
-    border-radius: 10px;
-    padding: 10px 22px;
-    background: var(--primary-background);
-    font-size: 16px;
-    color: #fff;
-    font-weight: 500;
-    font-family: poppins;
-    cursor: pointer;
-  }
-
-  /*** CONTACT END ***/
 }
 
 @media screen and (max-width: 700px) and (min-width: 551px) {
@@ -2857,6 +2775,9 @@ h6 {
   font-size: 94px;
   line-height: 94px;
 }
+.plan-item--1{
+  order: 1;
+}
 .plan-item {
   padding: 0px;
   margin: 20px 30px;
@@ -2870,6 +2791,10 @@ h6 {
 }
 .plan-item p{
   width: 100%;
+}
+.plan-item img{
+  height: 200px;
+  width: 200px;
 }
 
   #plan-container #contactBtn a button {
@@ -2910,13 +2835,12 @@ h6 {
 
   #about-us--2 h3 {
     font-weight: 300;
-    font-size: 13px;
-    margin-bottom: 10px;
+    font-size: 14px;
+    margin-bottom: 20px;
   }
   #about-us--2 h3 span {
-    font-weight: 500;
+    font-weight: 600;
     font-size: 15px;
-    color: var(--supporting-color);
   }
   #about-us--2 #contactBtn {
     padding-top: 20px;
@@ -2928,14 +2852,6 @@ h6 {
     border-radius: 10px;
     box-shadow: 7px 7px 10px -3px rgba(0, 0, 0, 0.4);
     margin-bottom: 20px;
-  }
-
-  #about-us--2 h1 {
-    padding-top: 20px;
-    padding-left: 0px;
-    font-size: 24px;
-    font-weight: 600;
-    text-shadow: 4px 3px 6px rgba(0, 0, 0, 0.2);
   }
 
   /*** ABOUT SECTION END ***/
@@ -2951,13 +2867,12 @@ h6 {
   }
 
   #faq > h1 {
-    font-size: 24px;
-    color: var(--heading-white);
+    font-size: 64px;
   }
 
   .faq-container {
     max-width: 800px;
-    margin: 50px auto;
+    margin: 30px auto !important;
     padding: 20px;
     background: var(--secondary-background);
     border-radius: 8px;
