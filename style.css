@@ -720,6 +720,7 @@ h6 {
 
 #about-page {
   padding-top: 150px;
+  padding-bottom: 0px;
   width: 100%;
 }
 #about-intro {
@@ -733,7 +734,9 @@ h6 {
 }
 #about-intro--1 h1 {
   margin-bottom: 40px;
-  color: var(--secondary-black);
+  font-size: 40px;
+  font-weight: 900;
+  font-family: headline;
   text-shadow: 4px 3px 6px rgba(0, 0, 0, 0.2);
 }
 #about-intro--1 h3 {
@@ -742,11 +745,7 @@ h6 {
   color: #000;
 }
 #about-intro--1 h3 span {
-  font-size: 22px;
   font-weight: 600;
-  color: var(--supporting-color);
-  -webkit-text-stroke: #000 .1px;
-  font-family: headline;
 }
 #about-page--2 {
   width: 40%;
@@ -758,11 +757,12 @@ h6 {
   border-radius: 15px;
 }
 #about-mission h1 {
-  font-size: 40px;
-  color: var(--secondary-black);
+  font-size: 30px;
+  font-family: headline;
   text-shadow: 4px 3px 6px rgba(0, 0, 0, 0.2);
 }
 #about-mission h4 {
+  width: 85%;
   padding-top: 30px;
   padding-bottom: 30px;
   font-size: 20px;
@@ -770,18 +770,15 @@ h6 {
   color: #000;
 }
 #about-mission h4 span {
-  font-size: 22px;
   font-weight: 900;
-  color: var(--supporting-color);
-  -webkit-text-stroke: #000 .1px;
-  font-family: headline;
 }
 #about-work h1 {
-  font-size: 40px;
-  color: var(--secondary-black);
+  font-size: 30px;
+  font-family: headline;
   text-shadow: 4px 3px 6px rgba(0, 0, 0, 0.2);
 }
 #about-work h4 {
+  width: 85%;
   padding-top: 30px;
   padding-bottom: 30px;
   font-size: 20px;
@@ -789,18 +786,15 @@ h6 {
   color: #000;
 }
 #about-work h4 span{
-  font-size: 22px;
   font-weight: 900;
-  color: var(--supporting-color);
-  -webkit-text-stroke: #000 .1px;
-  font-family: headline;
 }
 #about-why h1 {
-  font-size: 40px;
-  color: var(--secondary-black);
+  font-size: 30px;
+  font-family: headline;
   text-shadow: 4px 3px 6px rgba(0, 0, 0, 0.2);
 }
 #about-why h4 {
+  width: 85%;
   padding-top: 30px;
   padding-bottom: 30px;
   font-size: 20px;
@@ -808,15 +802,14 @@ h6 {
   color: #000;
 }
 #about-why h4 span {
-  font-size: 22px;
   font-weight: 900;
-  color: var(--supporting-color);
-  -webkit-text-stroke: #000 .1px;
-  font-family: headline;
 }
 #about-why h4 a {
   color: var(--primary-blue);
   text-shadow: 4px 3px 6px rgba(0, 0, 0, 0.2);
+}
+#cta-div{
+  margin-top: 20px;
 }
 #about-page #contactBtn a button {
   font-size: 48px;
@@ -824,6 +817,7 @@ h6 {
 #about-page #pricingBtn a button {
   font-size: 48px;
 }
+
 
 /*** ABOUT PAGE END ***/
 
